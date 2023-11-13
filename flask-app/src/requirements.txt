@@ -1,4 +1,4 @@
-flask==2.2.2
+flask==2.3.3
 flask-restful==0.3.9
 flask-login==0.6.2
 flask-mysql==1.5.2

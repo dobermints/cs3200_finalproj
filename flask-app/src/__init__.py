@@ -16,7 +16,7 @@ def create_app():
 
     # these are for the DB object to be able to connect to MySQL. 
     app.config['MYSQL_DATABASE_USER'] = 'root'
-    app.config['MYSQL_DATABASE_PASSWORD'] = open('/secrets/db_password.txt').readline().strip()
+    app.config['MYSQL_DATABASE_PASSWORD'] = open('/secrets/db_root_password.txt').readline().strip()
     app.config['MYSQL_DATABASE_HOST'] = 'db'
     app.config['MYSQL_DATABASE_PORT'] = 3306
     app.config['MYSQL_DATABASE_DB'] = 'northwind'  # Change this to your DB name
@@ -24,19 +24,22 @@ def create_app():
     # Initialize the database object with the settings above. 
     db.init_app(app)
     
-    # Add a default route
+    # Add the default route
+    # Can be accessed from a web browser
+    # http://ip_address:port/
+    # Example: localhost:8001
     @app.route("/")
     def welcome():
         return "<h1>Welcome to the 3200 boilerplate app</h1>"
 
-    # Import the various routes
-    from src.views import views
+    # Import the various Beluprint Objects
     from src.customers.customers import customers
     from src.products.products  import products
 
-    # Register the routes that we just imported so they can be properly handled
-    app.register_blueprint(views,       url_prefix='/v') 
+    # Register the routes from each Blueprint with the app object
+    # and give a url prefix to each
     app.register_blueprint(customers,   url_prefix='/c')
     app.register_blueprint(products,    url_prefix='/p')
 
+    # Don't forget to return the app object
     return app
