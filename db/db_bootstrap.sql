@@ -19,13 +19,13 @@ flush privileges;
 use cool_db;
 
 -- Put your DDL 
-CREATE TABLE test_table (
+CREATE TABLE fav_colors (
   name VARCHAR(20),
   color VARCHAR(10)
 );
 
 -- Add sample data. 
-INSERT INTO test_table
+INSERT INTO fav_colors
   (name, color)
 VALUES
   ('dev', 'blue'),
