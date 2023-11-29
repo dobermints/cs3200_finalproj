@@ -8,7 +8,7 @@ users = Blueprint('users', __name__)
 @users.route('/users/<username>', methods=['GET'])
 def get_user_account(username):
     cursor = db.get_db().cursor()
-    cursor.execute('select * from users where username = {0}'.format(username))
+    cursor.execute('select * from User where username = {0}'.format(username))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -39,7 +39,7 @@ def add_new_user():
     date_of_birth = the_data['date_of_birth']
     
     # Constructing the query
-    query = 'insert into User (username, firstName, lastName, country, dateJoined, phone, emial, totalLikes, dateOfBirth) values ("'
+    query = 'insert into User (username, firstName, lastName, country, dateJoined, phone, email, totalLikes, dateOfBirth) values ("'
     query += username + '", "'
     query += first_name + '", "'
     query += last_name + '", '
@@ -57,3 +57,33 @@ def add_new_user():
     db.get_db().commit()
     
     return 'Success!'
+
+# Update user account for specific user
+@users.route('/users/row/<row>', methods=['PUT'])
+def get_user_account(username):
+    cursor = db.get_db().cursor()
+    cursor.execute('update User set where username = {0}'.format(username))
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
+# Delete user account for specific user
+@users.route('/users/deleted', methods=['DELETE'])
+def get_user_account(username):
+    cursor = db.get_db().cursor()
+    cursor.execute('delete from User where username = {0}'.format(username))
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
