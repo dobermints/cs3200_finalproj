@@ -28,17 +28,27 @@ def add_new_user():
     current_app.logger.info(the_data)
 
     #extracting the variable
-    name = the_data['product_name']
-    description = the_data['product_description']
-    price = the_data['product_price']
-    category = the_data['product_category']
-
+    username = the_data['username']
+    first_name = the_data['first_name']
+    last_name = the_data['last_name']
+    country = the_data['country']
+    date_joined = the_data['date_joined']
+    phone = the_data['phone']
+    email = the_data['email']
+    total_likes = the_data['total_likes']
+    date_of_birth = the_data['date_of_birth']
+    
     # Constructing the query
-    query = 'insert into products (product_name, description, category, list_price) values ("'
-    query += name + '", "'
-    query += description + '", "'
-    query += category + '", '
-    query += str(price) + ')'
+    query = 'insert into User (username, firstName, lastName, country, dateJoined, phone, emial, totalLikes, dateOfBirth) values ("'
+    query += username + '", "'
+    query += first_name + '", "'
+    query += last_name + '", '
+    query += country + '", "'
+    query += date_joined + '", "'
+    query += str(phone) + '", '
+    query += email + '", '
+    query += str(total_likes) + '", '
+    query += str(date_of_birth) + ')'
     current_app.logger.info(query)
 
     # executing and committing the insert statement 

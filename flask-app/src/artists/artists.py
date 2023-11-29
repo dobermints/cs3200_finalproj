@@ -4,7 +4,7 @@ from src import db
 
 artists = Blueprint('artists', __name__)
 
-# Get artist rank for artist with 
+# Get artist rank for artist with given username
 @artists.route('/artists/<rank>', methods=['GET'])
 def get_artist_rank(username):
     cursor = db.get_db().cursor()
