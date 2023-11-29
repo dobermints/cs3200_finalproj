@@ -21,7 +21,7 @@ def get_catalog(catalogID):
 
 # Create/make public catalog
 @catalogs.route('/catalog/', methods=['POST'])
-def create_catalog():
+def create_catalog_listing():
     
     # collecting data from the request object 
     the_data = request.json
@@ -55,8 +55,8 @@ def create_catalog():
     return 'Success!'
 
 # Update a song catalog
-@catalogs.route('/users/row/<row>', methods=['PUT'])
-def get_user_account(catalogID):
+@catalogs.route('/catalog/row/<row>', methods=['PUT'])
+def update_catalog_listing(catalogID):
     cursor = db.get_db().cursor()
     cursor.execute('update SongCatalog set where catalogID = {0}'.format(catalogID))
     row_headers = [x[0] for x in cursor.description]
@@ -70,8 +70,8 @@ def get_user_account(catalogID):
     return the_response
 
 # Delete catalog for a specific catalogID
-@catalogs.route('/users/deleted', methods=['DELETE'])
-def get_user_account(catalogID):
+@catalogs.route('/catalog/deleted', methods=['DELETE'])
+def delete_catalog_listing(catalogID):
     cursor = db.get_db().cursor()
     cursor.execute('delete from SongCatalog where catalogID = {0}'.format(catalogID))
     row_headers = [x[0] for x in cursor.description]
