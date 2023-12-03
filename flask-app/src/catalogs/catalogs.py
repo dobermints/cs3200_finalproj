@@ -20,7 +20,7 @@ def get_catalog(catalogID):
     return the_response
 
 # Create/make public catalog
-@catalogs.route('/catalog/', methods=['POST'])
+@catalogs.route('/catalog', methods=['POST'])
 def create_catalog_listing():
     
     # collecting data from the request object 

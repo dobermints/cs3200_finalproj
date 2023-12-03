@@ -1,26 +1,24 @@
 version: "3.9"
 
-# We are setting up 2 or 3 services: 
-# - web container for the Flask application 
+# We are setting up 2 or 3 services:
+# - web container for the Flask application
 # - db container for mysql
 # - appsmith container for appsmith
 services:
-
   ##################################################################
   # configure the webserver container
   web:
-    
     # Set up the web server according to the Dockerfile inside the api/ folder
     build: flask-app/
     container_name: web
-    # connect the src folder in on the host machine to the code folder in the container. 
+    # connect the src folder in on the host machine to the code folder in the container.
     # note that the code folder in contaier is the working directory (see DockerFile).
-    volumes: ['./flask-app:/code', './secrets:/secrets'] 
+    volumes: ["./flask-app:/code", "./secrets:/secrets"]
 
-    # have the container restart if it fails for some reason. 
+    # have the container restart if it fails for some reason.
     restart: unless-stopped
 
-    # map host port 8001 to container port 4000 (see the 
+    # map host port 8001 to container port 4000 (see the
     # EXPOSE command in api/Dockerfile)
     ports:
       - "8001:4000"
@@ -35,42 +33,42 @@ services:
     image: mysql:8
     container_name: db
     volumes:
-      # anything in (or mounted in) /docker-entrypoint-initdb.d in the container 
+      # anything in (or mounted in) /docker-entrypoint-initdb.d in the container
       # will automatically be executed when the container is created
       - ./db:/docker-entrypoint-initdb.d/:ro
 
     ports:
       # mapping host port 3200 to container port 3306, which is the
-      # default port for mysql. 
+      # default port for mysql.
       - 3200:3306
 
     restart: unless-stopped
-    
+
     # Setting up some environment variables for secrets.
     # Here we are setting the root password
-    # as well as creating an additional user called 
-    # webapp.  webapp user password is stored in a secret 
-    # file as well. 
+    # as well as creating an additional user called
+    # webapp.  webapp user password is stored in a secret
+    # file as well.
     environment:
       MYSQL_USER: webapp
       MYSQL_PASSWORD_FILE: /run/secrets/secret_db_pw
       MYSQL_ROOT_PASSWORD_FILE: /run/secrets/secret_db_root_pw
-    
+
     secrets:
       - secret_db_pw
       - secret_db_root_pw
 
   ##################################################################
   # configure the AppSmith container (borrowed directly from Appsmith)
-#   appsmith:
-#     image: index.docker.io/appsmith/appsmith-ce
-#     container_name: appsmith
-#     ports:
-#       - "8080:80"
-#       - "4443:443"
-#     volumes:
-#       - ./stacks:/appsmith-stacks
-#     restart: unless-stopped
+  appsmith:
+    image: index.docker.io/appsmith/appsmith-ce
+    container_name: appsmith
+    ports:
+      - "8080:80"
+      - "4443:443"
+    volumes:
+      - ./stacks:/appsmith-stacks
+    restart: unless-stopped
 
 secrets:
   secret_db_pw:

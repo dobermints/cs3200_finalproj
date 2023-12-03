@@ -8,7 +8,22 @@ artists = Blueprint('artists', __name__)
 @artists.route('/artists/<username>', methods=['GET'])
 def get_artist_account(username):
     cursor = db.get_db().cursor()
-    cursor.execute('select * from Artist where username = {0}'.format(username))
+    cursor.execute('select username, stageName, country, dateJoined, totalLikes, totalDislikes, dayRank, weekRank, monthRank from Artist where username = {0}'.format(username))
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
+# Get user account for specific user
+@artists.route('/artists', methods=['GET'])
+def get_all_artist_account():
+    cursor = db.get_db().cursor()
+    cursor.execute('select * from Artist')
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -20,7 +35,7 @@ def get_artist_account(username):
     return the_response
 
 # Get artist rank based off artist username
-@artists.route('/artists/<rank>', methods=['GET'])
+@artists.route('/artists/rank/<username>', methods=['GET'])
 def get_artist_rank(username):
     cursor = db.get_db().cursor()
     cursor.execute('select dayRank, monthRank, weekRank from Artist where username = {0}'.format(username))
@@ -34,8 +49,23 @@ def get_artist_rank(username):
     the_response.mimetype = 'application/json'
     return the_response
 
+# Get artists based off artist genre
+@artists.route('/artists/genre/<genre>', methods=['GET'])
+def get_artist_by_genre(genre):
+    cursor = db.get_db().cursor()
+    cursor.execute('select username, stageName, country, dateJoined, totalLikes, totalDislikes, dayRank, weekRank, monthRank from Artist where genre = {0}'.format(genre))
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
 # Create user account for new user
-@artists.route('/artists/', methods=['POST'])
+@artists.route('/artists', methods=['POST'])
 def add_new_artist():
     
     # collecting data from the request object 
@@ -99,7 +129,7 @@ def update_artist_account(username):
     return the_response
 
 # Delete user account for specific user
-@artists.route('/artists/deleted', methods=['DELETE'])
+@artists.route('/artists/', methods=['DELETE'])
 def delete_artist_account(username):
     cursor = db.get_db().cursor()
     cursor.execute('delete from Artist where username = {0}'.format(username))

@@ -20,7 +20,7 @@ def get_user_account(username):
     return the_response
 
 # Create user account for new user
-@users.route('/users/', methods=['POST'])
+@users.route('/users', methods=['POST'])
 def add_new_user():
     
     # collecting data from the request object 
@@ -60,7 +60,7 @@ def add_new_user():
 
 # Update user account for specific user
 @users.route('/users/row/<row>', methods=['PUT'])
-def get_user_account(username):
+def update_user_account(username):
     cursor = db.get_db().cursor()
     cursor.execute('update User set where username = {0}'.format(username))
     row_headers = [x[0] for x in cursor.description]
@@ -75,7 +75,7 @@ def get_user_account(username):
 
 # Delete user account for specific user
 @users.route('/users/deleted', methods=['DELETE'])
-def get_user_account(username):
+def delete_user_account(username):
     cursor = db.get_db().cursor()
     cursor.execute('delete from User where username = {0}'.format(username))
     row_headers = [x[0] for x in cursor.description]
