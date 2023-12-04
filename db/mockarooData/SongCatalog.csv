@@ -1,0 +1,1001 @@
+totalSales,value,genre,name,companyID,songID,catalogID
+6559,4752,classical,Dancing in the Moonlight,232,158,1
+6510,7842,metal,Summer Breeze,682,939,2
+3620,6826,gospel,Electric Dreams,46,420,3
+2486,6818,blues,Melodies of Love,984,755,4
+9888,7407,reggae,Dancing in the Moonlight,41,557,5
+2915,125,folk,Whispering Wind,952,817,6
+7330,5098,latin,Melodies of Love,879,870,7
+1004,3526,pop,Midnight Serenade,805,679,8
+4353,4151,r&b,Electric Dreams,644,300,9
+74,2300,pop,Electric Dreams,901,969,10
+3200,6865,blues,Electric Dreams,532,740,11
+5218,7657,alternative,Electric Dreams,192,875,12
+8343,9341,electronic,Serenade of the Stars,403,214,13
+2891,9746,punk,Rhythm of the Night,924,880,14
+1687,4456,soul,Electric Dreams,383,196,15
+5718,5124,electronic,Melodies of Love,962,678,16
+6730,3106,folk,Melodies of Love,103,133,17
+102,1307,dance,Melodies of Love,604,53,18
+3824,8221,folk,Serenade of the Stars,725,75,19
+9266,8318,classical,Serenade of the Stars,674,383,20
+1977,2749,pop,Sunshine Day,708,329,21
+5821,7687,hip hop,Midnight Serenade,527,341,22
+9929,450,rock,Melodies of Love,999,356,23
+6274,7588,dance,Electric Dreams,195,200,24
+1578,3375,electronic,Serenade of the Stars,319,886,25
+9234,1534,punk,Melodies of Love,48,388,26
+3152,6425,r&b,Electric Dreams,136,498,27
+6917,853,folk,Harmony in Motion,418,160,28
+7377,3802,metal,Dancing in the Moonlight,480,503,29
+5335,3035,rap,Midnight Serenade,303,622,30
+7150,6123,jazz,Melodies of Love,21,99,31
+333,1033,metal,Serenade of the Stars,779,30,32
+5890,2263,dance,Dancing in the Moonlight,644,800,33
+6301,968,r&b,Rhythm of the Night,812,647,34
+3715,5759,dance,Sunshine Day,127,757,35
+5268,5605,rap,Dancing in the Moonlight,233,222,36
+6223,296,reggae,Harmony in Motion,924,275,37
+8110,1362,punk,Serenade of the Stars,807,521,38
+5206,1164,latin,Melodies of Love,383,588,39
+5282,3588,hip hop,Harmony in Motion,943,868,40
+3536,8072,classical,Melodies of Love,157,819,41
+2621,7122,rap,Harmony in Motion,646,602,42
+1893,2937,indie,Melodies of Love,640,957,43
+292,3850,gospel,Electric Dreams,764,457,44
+4807,5456,pop,Whispering Wind,493,370,45
+4525,1370,punk,Midnight Serenade,370,132,46
+7561,4876,jazz,Harmony in Motion,863,204,47
+8071,2060,country,Whispering Wind,474,324,48
+9024,867,r&b,Dancing in the Moonlight,390,145,49
+9599,1041,dance,Sunshine Day,17,315,50
+2948,6212,latin,Dancing in the Moonlight,915,857,51
+9989,9584,alternative,Summer Breeze,314,258,52
+6109,2997,country,Rhythm of the Night,78,700,53
+8226,6856,pop,Electric Dreams,633,698,54
+9228,3781,rock,Midnight Serenade,482,368,55
+6308,4120,soul,Electric Dreams,192,304,56
+9396,1893,folk,Sunshine Day,295,38,57
+1870,9929,gospel,Serenade of the Stars,780,6,58
+7437,8061,metal,Whispering Wind,235,173,59
+3495,4121,latin,Melodies of Love,411,733,60
+8618,2370,hip hop,Dancing in the Moonlight,985,504,61
+2853,2981,gospel,Summer Breeze,323,61,62
+7548,6115,rap,Serenade of the Stars,743,273,63
+3265,3864,electronic,Melodies of Love,475,724,64
+2409,4574,metal,Melodies of Love,800,235,65
+9185,8497,country,Dancing in the Moonlight,808,961,66
+6924,3599,pop,Whispering Wind,108,631,67
+4376,8689,latin,Rhythm of the Night,901,251,68
+4747,2563,latin,Serenade of the Stars,456,799,69
+589,5476,indie,Summer Breeze,274,604,70
+6611,6709,hip hop,Midnight Serenade,974,679,71
+9847,6896,rap,Whispering Wind,17,350,72
+1378,1088,classical,Melodies of Love,758,610,73
+2673,6299,rap,Electric Dreams,749,958,74
+401,1846,folk,Harmony in Motion,321,267,75
+9192,5922,punk,Midnight Serenade,303,685,76
+414,279,r&b,Sunshine Day,960,694,77
+1715,4542,blues,Sunshine Day,206,50,78
+2770,4129,alternative,Sunshine Day,530,634,79
+1894,9437,classical,Whispering Wind,903,234,80
+7403,1470,jazz,Sunshine Day,571,784,81
+2798,8569,blues,Rhythm of the Night,81,373,82
+4322,5548,electronic,Serenade of the Stars,920,468,83
+3950,9274,hip hop,Whispering Wind,52,955,84
+7807,726,latin,Melodies of Love,281,306,85
+7485,9334,metal,Rhythm of the Night,285,611,86
+3642,3635,rock,Whispering Wind,609,890,87
+21,8709,indie,Harmony in Motion,792,203,88
+9537,4735,r&b,Harmony in Motion,823,730,89
+8222,6344,gospel,Melodies of Love,440,937,90
+4139,3456,jazz,Dancing in the Moonlight,659,139,91
+2295,1080,dance,Melodies of Love,685,935,92
+5199,543,electronic,Rhythm of the Night,461,464,93
+9129,9007,latin,Dancing in the Moonlight,298,15,94
+2390,6820,gospel,Whispering Wind,761,157,95
+9084,9504,alternative,Rhythm of the Night,125,55,96
+5452,9948,metal,Harmony in Motion,323,602,97
+9226,6586,blues,Serenade of the Stars,81,734,98
+7649,1109,latin,Melodies of Love,755,238,99
+1837,6280,jazz,Melodies of Love,436,291,100
+8770,7687,soul,Melodies of Love,471,254,101
+1972,5428,gospel,Dancing in the Moonlight,818,147,102
+4629,5691,classical,Dancing in the Moonlight,428,981,103
+2984,7043,rap,Harmony in Motion,669,825,104
+596,7810,dance,Serenade of the Stars,503,886,105
+3822,5609,rap,Rhythm of the Night,19,553,106
+4358,8793,alternative,Melodies of Love,93,481,107
+5377,7118,latin,Sunshine Day,360,918,108
+7879,7732,indie,Rhythm of the Night,801,355,109
+7378,6954,dance,Midnight Serenade,607,925,110
+3681,621,country,Sunshine Day,24,106,111
+7719,4089,folk,Serenade of the Stars,113,284,112
+936,8169,classical,Melodies of Love,381,995,113
+240,2056,classical,Melodies of Love,676,323,114
+1289,6484,indie,Rhythm of the Night,874,646,115
+4145,948,blues,Harmony in Motion,728,574,116
+9993,3832,country,Midnight Serenade,668,535,117
+5037,3134,metal,Serenade of the Stars,656,367,118
+3444,4915,punk,Dancing in the Moonlight,240,354,119
+1421,7125,r&b,Summer Breeze,155,150,120
+741,6227,reggae,Harmony in Motion,690,522,121
+4560,8835,hip hop,Serenade of the Stars,628,26,122
+4241,8233,jazz,Rhythm of the Night,788,114,123
+1103,969,metal,Melodies of Love,644,882,124
+4958,8165,soul,Harmony in Motion,973,151,125
+8994,2947,pop,Harmony in Motion,708,600,126
+5924,6285,jazz,Sunshine Day,87,441,127
+4784,969,indie,Rhythm of the Night,308,739,128
+6754,4577,country,Harmony in Motion,628,413,129
+8385,3654,latin,Harmony in Motion,644,197,130
+3182,8412,folk,Serenade of the Stars,209,734,131
+7709,7239,jazz,Sunshine Day,748,1000,132
+9796,5426,pop,Rhythm of the Night,981,953,133
+6281,2410,rock,Harmony in Motion,746,844,134
+6965,5612,gospel,Sunshine Day,383,9,135
+879,6800,latin,Sunshine Day,855,90,136
+410,1934,alternative,Whispering Wind,269,451,137
+3229,6836,classical,Sunshine Day,488,866,138
+4346,537,alternative,Serenade of the Stars,546,872,139
+3402,6128,gospel,Electric Dreams,400,266,140
+2708,8009,jazz,Harmony in Motion,814,217,141
+7612,4415,rap,Harmony in Motion,162,672,142
+7141,1655,reggae,Electric Dreams,700,216,143
+1684,3124,metal,Harmony in Motion,124,791,144
+520,7998,rap,Dancing in the Moonlight,821,824,145
+3610,6937,jazz,Electric Dreams,158,115,146
+6219,3938,gospel,Melodies of Love,804,907,147
+1502,6889,electronic,Dancing in the Moonlight,361,85,148
+9627,2910,gospel,Dancing in the Moonlight,731,446,149
+4403,2372,alternative,Dancing in the Moonlight,603,104,150
+2111,6137,hip hop,Rhythm of the Night,439,832,151
+1237,6999,indie,Harmony in Motion,22,442,152
+2644,5891,blues,Rhythm of the Night,716,31,153
+3661,9752,blues,Electric Dreams,271,968,154
+5302,2040,punk,Melodies of Love,693,995,155
+2787,8038,dance,Electric Dreams,486,245,156
+5157,7189,alternative,Dancing in the Moonlight,875,961,157
+3712,2052,dance,Whispering Wind,236,21,158
+5028,1463,metal,Harmony in Motion,22,500,159
+4974,5458,electronic,Rhythm of the Night,779,31,160
+172,7291,classical,Sunshine Day,902,537,161
+2789,8032,jazz,Sunshine Day,242,918,162
+7235,2580,reggae,Electric Dreams,86,479,163
+2461,7443,r&b,Dancing in the Moonlight,513,201,164
+3535,3489,jazz,Dancing in the Moonlight,478,814,165
+9589,3417,classical,Whispering Wind,996,34,166
+5616,8576,pop,Dancing in the Moonlight,599,752,167
+2109,9495,latin,Melodies of Love,622,898,168
+6285,6817,reggae,Harmony in Motion,956,198,169
+3703,2320,folk,Dancing in the Moonlight,96,158,170
+2639,4920,dance,Rhythm of the Night,658,769,171
+2689,5635,latin,Sunshine Day,512,9,172
+2652,7788,rock,Whispering Wind,895,895,173
+3017,2437,gospel,Summer Breeze,741,190,174
+6225,1581,indie,Rhythm of the Night,386,360,175
+4544,8258,metal,Summer Breeze,653,88,176
+5887,2216,metal,Rhythm of the Night,310,355,177
+7001,759,jazz,Serenade of the Stars,189,326,178
+886,3379,dance,Harmony in Motion,18,184,179
+6962,8607,classical,Melodies of Love,784,855,180
+8124,1611,r&b,Whispering Wind,786,344,181
+1726,752,rock,Dancing in the Moonlight,433,222,182
+3310,3162,classical,Midnight Serenade,138,639,183
+8167,4533,classical,Serenade of the Stars,137,848,184
+6969,303,punk,Whispering Wind,537,552,185
+2359,8028,reggae,Melodies of Love,511,193,186
+1446,480,pop,Rhythm of the Night,85,317,187
+1374,6045,country,Sunshine Day,273,652,188
+6343,6897,metal,Serenade of the Stars,376,398,189
+6203,6138,latin,Dancing in the Moonlight,563,416,190
+1089,4584,gospel,Sunshine Day,169,765,191
+2574,8260,alternative,Rhythm of the Night,411,29,192
+1156,2811,alternative,Harmony in Motion,784,965,193
+8853,2345,r&b,Melodies of Love,543,997,194
+5683,1074,pop,Electric Dreams,920,916,195
+6834,9877,hip hop,Melodies of Love,131,481,196
+7114,7517,hip hop,Harmony in Motion,947,131,197
+9603,3346,gospel,Sunshine Day,480,618,198
+4097,2926,dance,Dancing in the Moonlight,471,961,199
+3848,7442,reggae,Midnight Serenade,607,625,200
+1250,8907,rock,Midnight Serenade,96,998,201
+8962,9890,rap,Midnight Serenade,909,798,202
+6677,1862,punk,Harmony in Motion,91,287,203
+4050,6626,dance,Midnight Serenade,107,847,204
+4140,490,dance,Harmony in Motion,323,626,205
+4861,860,folk,Midnight Serenade,545,368,206
+5022,2162,folk,Serenade of the Stars,206,629,207
+8253,8669,rock,Melodies of Love,550,960,208
+4705,8500,metal,Melodies of Love,73,80,209
+6703,2370,rap,Rhythm of the Night,650,8,210
+6458,9367,latin,Midnight Serenade,991,312,211
+6576,2159,hip hop,Harmony in Motion,913,160,212
+7441,3689,soul,Electric Dreams,936,196,213
+8254,1793,indie,Serenade of the Stars,797,174,214
+7315,322,classical,Serenade of the Stars,956,273,215
+8817,6938,punk,Melodies of Love,482,534,216
+7899,9212,latin,Serenade of the Stars,795,422,217
+6002,3619,gospel,Dancing in the Moonlight,163,752,218
+2356,7505,reggae,Serenade of the Stars,363,533,219
+9052,728,reggae,Sunshine Day,490,915,220
+66,5919,metal,Harmony in Motion,764,730,221
+5128,6251,latin,Dancing in the Moonlight,898,742,222
+2395,5862,electronic,Harmony in Motion,769,151,223
+9812,8467,blues,Melodies of Love,347,318,224
+431,9702,latin,Melodies of Love,450,10,225
+7200,9132,rap,Summer Breeze,511,74,226
+1323,704,indie,Rhythm of the Night,899,712,227
+9542,9083,hip hop,Dancing in the Moonlight,110,713,228
+943,5484,rock,Sunshine Day,703,105,229
+5729,3048,pop,Serenade of the Stars,273,36,230
+9174,5150,punk,Dancing in the Moonlight,927,446,231
+3576,9911,latin,Whispering Wind,844,854,232
+202,5439,classical,Rhythm of the Night,572,829,233
+4062,3905,rock,Melodies of Love,543,481,234
+5828,5654,latin,Rhythm of the Night,317,259,235
+4156,2979,soul,Harmony in Motion,161,51,236
+7964,3807,metal,Summer Breeze,968,190,237
+8811,7471,punk,Summer Breeze,141,364,238
+4799,9863,pop,Harmony in Motion,823,184,239
+116,2236,soul,Sunshine Day,466,329,240
+4535,6098,indie,Harmony in Motion,256,243,241
+3559,2741,folk,Midnight Serenade,22,938,242
+9526,5,gospel,Serenade of the Stars,126,384,243
+3146,1127,blues,Whispering Wind,338,696,244
+5911,5705,metal,Melodies of Love,442,235,245
+6203,5673,hip hop,Midnight Serenade,99,465,246
+5704,4927,blues,Electric Dreams,567,256,247
+1395,304,hip hop,Electric Dreams,209,216,248
+5167,6289,classical,Dancing in the Moonlight,849,689,249
+8931,1491,pop,Midnight Serenade,580,831,250
+8288,9015,hip hop,Summer Breeze,563,531,251
+4442,6531,jazz,Rhythm of the Night,887,676,252
+1192,5480,pop,Midnight Serenade,142,970,253
+2810,6443,soul,Summer Breeze,695,532,254
+6029,1842,soul,Electric Dreams,967,479,255
+4279,6128,dance,Serenade of the Stars,71,26,256
+8908,5156,metal,Dancing in the Moonlight,555,654,257
+6129,8838,blues,Serenade of the Stars,280,872,258
+4699,2002,metal,Harmony in Motion,993,825,259
+3467,4973,dance,Midnight Serenade,521,215,260
+1098,4869,gospel,Electric Dreams,442,447,261
+4703,9747,folk,Rhythm of the Night,77,646,262
+5426,5912,jazz,Serenade of the Stars,699,98,263
+3040,1344,r&b,Whispering Wind,401,909,264
+9820,6737,jazz,Serenade of the Stars,317,372,265
+5220,4782,gospel,Serenade of the Stars,985,577,266
+4009,9946,blues,Melodies of Love,979,595,267
+2879,8990,alternative,Electric Dreams,143,527,268
+7835,254,metal,Sunshine Day,869,405,269
+1735,2970,pop,Dancing in the Moonlight,245,486,270
+5655,8752,classical,Serenade of the Stars,212,982,271
+910,2742,alternative,Melodies of Love,398,667,272
+1945,8697,folk,Summer Breeze,717,155,273
+1170,7820,classical,Dancing in the Moonlight,701,77,274
+8310,7977,dance,Summer Breeze,407,220,275
+912,5946,soul,Serenade of the Stars,30,404,276
+1496,863,gospel,Dancing in the Moonlight,446,513,277
+1595,951,soul,Whispering Wind,404,289,278
+4473,4212,country,Serenade of the Stars,831,310,279
+2542,8049,soul,Electric Dreams,933,380,280
+2919,7826,blues,Serenade of the Stars,96,30,281
+5772,6383,rock,Rhythm of the Night,699,29,282
+3330,3361,jazz,Melodies of Love,939,57,283
+1310,2223,electronic,Harmony in Motion,743,467,284
+55,9501,latin,Whispering Wind,868,313,285
+6248,8698,pop,Dancing in the Moonlight,823,177,286
+3013,2127,electronic,Midnight Serenade,351,103,287
+4001,8515,indie,Harmony in Motion,298,20,288
+7410,7869,folk,Serenade of the Stars,238,384,289
+7039,7666,rap,Whispering Wind,68,186,290
+7612,632,indie,Midnight Serenade,285,684,291
+6702,2203,electronic,Rhythm of the Night,283,804,292
+6864,5451,pop,Sunshine Day,949,652,293
+5658,9640,folk,Sunshine Day,294,765,294
+722,9554,rap,Summer Breeze,287,194,295
+3743,9859,rap,Electric Dreams,190,420,296
+3758,3840,metal,Dancing in the Moonlight,739,723,297
+8213,6852,indie,Dancing in the Moonlight,355,321,298
+7605,4759,jazz,Midnight Serenade,810,472,299
+8985,8603,classical,Sunshine Day,505,784,300
+5268,2618,classical,Dancing in the Moonlight,516,742,301
+6109,5370,folk,Serenade of the Stars,232,619,302
+2218,1960,rap,Harmony in Motion,210,869,303
+3275,9314,dance,Electric Dreams,755,643,304
+615,8914,gospel,Summer Breeze,258,337,305
+9249,5823,classical,Dancing in the Moonlight,446,147,306
+2541,2354,hip hop,Dancing in the Moonlight,651,15,307
+6085,1668,metal,Sunshine Day,101,163,308
+1357,5316,alternative,Dancing in the Moonlight,350,399,309
+5885,3184,classical,Serenade of the Stars,604,214,310
+6820,6116,gospel,Midnight Serenade,217,428,311
+9930,5117,pop,Midnight Serenade,461,260,312
+2433,5420,dance,Melodies of Love,329,411,313
+3818,9556,classical,Electric Dreams,979,692,314
+6123,7340,alternative,Sunshine Day,410,247,315
+4786,6093,alternative,Whispering Wind,804,785,316
+1145,1759,classical,Dancing in the Moonlight,785,788,317
+3013,8699,indie,Sunshine Day,37,762,318
+2395,3779,folk,Whispering Wind,535,224,319
+4243,4193,folk,Electric Dreams,705,941,320
+7872,7803,gospel,Harmony in Motion,842,564,321
+7565,5440,rock,Melodies of Love,255,167,322
+1245,25,hip hop,Sunshine Day,637,1000,323
+6472,6534,punk,Sunshine Day,12,790,324
+6476,3624,gospel,Rhythm of the Night,780,45,325
+5142,5126,country,Melodies of Love,507,709,326
+6056,7159,alternative,Harmony in Motion,668,620,327
+8921,5235,alternative,Whispering Wind,502,599,328
+6498,452,latin,Summer Breeze,1,241,329
+6350,3050,rock,Sunshine Day,339,348,330
+6372,748,punk,Rhythm of the Night,476,317,331
+8420,9339,pop,Melodies of Love,834,777,332
+1151,7188,indie,Rhythm of the Night,465,651,333
+5722,434,folk,Midnight Serenade,645,964,334
+1583,9420,dance,Harmony in Motion,948,522,335
+9640,2709,soul,Sunshine Day,928,44,336
+2217,3434,pop,Harmony in Motion,195,600,337
+6676,5192,r&b,Sunshine Day,775,120,338
+1758,9431,alternative,Dancing in the Moonlight,305,568,339
+8072,1338,soul,Midnight Serenade,392,938,340
+4994,4882,country,Melodies of Love,586,123,341
+1674,9289,metal,Melodies of Love,2,461,342
+2636,8680,rap,Harmony in Motion,637,786,343
+3234,8351,gospel,Melodies of Love,878,882,344
+3267,6083,rap,Melodies of Love,902,238,345
+3091,2678,punk,Whispering Wind,31,138,346
+934,2544,electronic,Sunshine Day,680,483,347
+4788,2399,reggae,Summer Breeze,269,690,348
+1292,4695,rap,Sunshine Day,405,363,349
+525,8517,blues,Summer Breeze,281,528,350
+935,5164,hip hop,Sunshine Day,30,330,351
+781,7790,metal,Midnight Serenade,984,944,352
+752,1402,classical,Dancing in the Moonlight,63,77,353
+3332,9561,jazz,Rhythm of the Night,257,205,354
+162,4558,dance,Sunshine Day,909,790,355
+8775,1019,dance,Midnight Serenade,790,639,356
+757,4891,country,Melodies of Love,164,73,357
+5264,2930,metal,Harmony in Motion,529,844,358
+9670,8290,electronic,Sunshine Day,404,9,359
+1695,1962,indie,Electric Dreams,271,402,360
+2721,3087,punk,Whispering Wind,351,213,361
+3171,8317,r&b,Electric Dreams,879,245,362
+1052,7372,latin,Serenade of the Stars,43,81,363
+7238,6155,punk,Whispering Wind,278,675,364
+6883,8049,electronic,Electric Dreams,756,162,365
+512,134,electronic,Summer Breeze,345,258,366
+4277,1534,latin,Midnight Serenade,186,18,367
+7780,2374,country,Dancing in the Moonlight,167,446,368
+608,881,latin,Serenade of the Stars,753,319,369
+6476,2822,blues,Electric Dreams,20,969,370
+5113,3346,metal,Rhythm of the Night,111,917,371
+960,7679,gospel,Melodies of Love,393,388,372
+4282,7067,punk,Harmony in Motion,739,985,373
+6290,113,jazz,Rhythm of the Night,39,930,374
+7727,4244,hip hop,Serenade of the Stars,328,848,375
+9034,4557,alternative,Whispering Wind,756,83,376
+393,8027,hip hop,Harmony in Motion,126,951,377
+3505,4217,latin,Dancing in the Moonlight,21,170,378
+5643,3143,rap,Electric Dreams,419,527,379
+2408,1283,dance,Summer Breeze,593,255,380
+9170,7484,alternative,Rhythm of the Night,702,653,381
+7225,3943,country,Rhythm of the Night,714,362,382
+6576,2669,blues,Harmony in Motion,51,267,383
+4043,5392,electronic,Electric Dreams,894,169,384
+6253,8923,electronic,Serenade of the Stars,375,576,385
+1469,4843,alternative,Melodies of Love,993,57,386
+8861,9471,rap,Serenade of the Stars,455,793,387
+8118,9757,country,Midnight Serenade,166,925,388
+4168,9121,metal,Whispering Wind,889,778,389
+8923,1706,alternative,Rhythm of the Night,172,949,390
+9519,1558,rock,Electric Dreams,789,216,391
+5887,5997,classical,Serenade of the Stars,347,229,392
+4086,4121,gospel,Whispering Wind,332,52,393
+9263,4754,rap,Harmony in Motion,471,602,394
+5048,2917,dance,Melodies of Love,616,379,395
+6749,2431,country,Summer Breeze,237,191,396
+6447,2479,rock,Electric Dreams,177,322,397
+941,8588,rock,Summer Breeze,851,385,398
+6745,2908,metal,Midnight Serenade,930,865,399
+3342,1473,alternative,Harmony in Motion,121,217,400
+1534,1586,alternative,Sunshine Day,766,476,401
+6442,6028,blues,Midnight Serenade,505,938,402
+1390,1594,latin,Melodies of Love,170,450,403
+8963,8648,hip hop,Sunshine Day,907,808,404
+8075,898,rap,Sunshine Day,974,661,405
+8839,247,country,Harmony in Motion,568,514,406
+4687,8443,blues,Serenade of the Stars,205,36,407
+973,2659,rap,Summer Breeze,741,241,408
+9717,3769,rock,Harmony in Motion,74,749,409
+3319,4335,dance,Serenade of the Stars,880,521,410
+5249,5730,metal,Whispering Wind,334,731,411
+7922,2416,blues,Electric Dreams,6,257,412
+1661,4194,folk,Dancing in the Moonlight,722,228,413
+5949,6171,jazz,Melodies of Love,434,356,414
+9306,4546,rap,Dancing in the Moonlight,126,491,415
+3725,6809,gospel,Midnight Serenade,955,215,416
+2375,9778,soul,Harmony in Motion,48,859,417
+8913,8176,hip hop,Melodies of Love,735,133,418
+3935,4702,soul,Electric Dreams,911,169,419
+7747,268,dance,Harmony in Motion,483,184,420
+8579,3886,electronic,Sunshine Day,183,483,421
+5205,9236,jazz,Sunshine Day,193,301,422
+1625,7984,alternative,Summer Breeze,399,747,423
+4351,5974,metal,Dancing in the Moonlight,255,222,424
+543,6274,country,Summer Breeze,293,852,425
+8327,5927,indie,Sunshine Day,202,1000,426
+9423,5970,alternative,Rhythm of the Night,588,794,427
+4593,8344,country,Serenade of the Stars,460,886,428
+6491,9209,rock,Electric Dreams,628,558,429
+7330,59,indie,Dancing in the Moonlight,610,307,430
+5355,3192,hip hop,Harmony in Motion,923,573,431
+6018,6159,indie,Harmony in Motion,929,665,432
+1838,3353,reggae,Electric Dreams,31,342,433
+6823,6472,soul,Dancing in the Moonlight,155,654,434
+8955,4442,pop,Melodies of Love,482,238,435
+9876,2741,classical,Whispering Wind,440,833,436
+6618,4359,indie,Sunshine Day,786,69,437
+2139,7437,dance,Melodies of Love,770,882,438
+5944,6125,classical,Dancing in the Moonlight,609,723,439
+4820,9447,punk,Sunshine Day,762,756,440
+5473,2969,rap,Summer Breeze,276,424,441
+1849,1349,classical,Serenade of the Stars,973,375,442
+2644,6951,folk,Melodies of Love,525,681,443
+3857,827,reggae,Summer Breeze,527,945,444
+5665,6493,blues,Harmony in Motion,222,746,445
+5805,7891,rap,Electric Dreams,844,875,446
+8142,4748,alternative,Harmony in Motion,205,122,447
+4048,1845,rap,Midnight Serenade,380,396,448
+8112,2977,blues,Rhythm of the Night,516,884,449
+872,7731,r&b,Sunshine Day,873,475,450
+6056,3412,pop,Dancing in the Moonlight,211,560,451
+9633,2378,jazz,Melodies of Love,845,870,452
+3102,5893,classical,Whispering Wind,124,708,453
+9411,1790,blues,Harmony in Motion,935,418,454
+3510,7910,soul,Dancing in the Moonlight,628,104,455
+5012,5865,pop,Harmony in Motion,975,432,456
+3578,1225,latin,Serenade of the Stars,363,775,457
+3082,4157,reggae,Electric Dreams,480,905,458
+3664,6622,blues,Serenade of the Stars,939,458,459
+2904,7118,pop,Midnight Serenade,397,159,460
+6885,2335,hip hop,Whispering Wind,729,649,461
+7279,5421,soul,Electric Dreams,67,650,462
+58,7557,hip hop,Dancing in the Moonlight,979,713,463
+1611,9636,gospel,Rhythm of the Night,755,553,464
+9827,8421,jazz,Rhythm of the Night,639,710,465
+5419,4250,blues,Summer Breeze,99,336,466
+3102,1446,pop,Melodies of Love,441,758,467
+2539,5374,blues,Sunshine Day,19,330,468
+9501,3790,hip hop,Summer Breeze,344,892,469
+8172,9128,dance,Midnight Serenade,585,944,470
+2518,7014,reggae,Dancing in the Moonlight,467,814,471
+4341,545,metal,Whispering Wind,198,617,472
+3021,6842,electronic,Summer Breeze,701,385,473
+7618,3506,electronic,Dancing in the Moonlight,403,557,474
+4024,8220,alternative,Whispering Wind,914,234,475
+3912,4061,electronic,Whispering Wind,233,179,476
+8481,2205,latin,Whispering Wind,959,781,477
+7276,926,electronic,Harmony in Motion,519,749,478
+2640,3995,pop,Rhythm of the Night,378,646,479
+4299,2110,r&b,Rhythm of the Night,40,433,480
+8089,744,folk,Midnight Serenade,317,828,481
+3534,6120,rap,Rhythm of the Night,712,438,482
+2044,3573,indie,Harmony in Motion,188,730,483
+6910,6554,soul,Summer Breeze,6,562,484
+8660,2815,folk,Electric Dreams,483,233,485
+5888,9395,rap,Summer Breeze,423,119,486
+7335,3770,r&b,Melodies of Love,230,379,487
+5748,8504,classical,Harmony in Motion,426,825,488
+3569,5836,hip hop,Dancing in the Moonlight,925,85,489
+8444,4648,electronic,Summer Breeze,833,628,490
+2627,7418,soul,Sunshine Day,534,809,491
+3260,4494,pop,Sunshine Day,518,792,492
+2058,7074,reggae,Rhythm of the Night,57,164,493
+5721,7372,r&b,Melodies of Love,402,285,494
+6665,6286,rock,Sunshine Day,194,808,495
+7853,9645,folk,Whispering Wind,735,138,496
+1872,2511,indie,Whispering Wind,808,943,497
+9770,9715,pop,Summer Breeze,277,885,498
+8545,6588,indie,Melodies of Love,202,254,499
+1760,5826,hip hop,Serenade of the Stars,476,94,500
+3731,5314,dance,Midnight Serenade,620,846,501
+7184,5113,blues,Sunshine Day,825,391,502
+6864,1901,rock,Harmony in Motion,692,390,503
+9731,2396,soul,Melodies of Love,801,493,504
+7177,5472,electronic,Midnight Serenade,517,881,505
+6796,8076,gospel,Whispering Wind,276,909,506
+6896,6630,hip hop,Melodies of Love,771,693,507
+9679,7905,latin,Melodies of Love,278,285,508
+6520,4544,electronic,Whispering Wind,525,268,509
+9141,3608,reggae,Whispering Wind,737,234,510
+5012,2136,reggae,Serenade of the Stars,766,940,511
+451,3541,pop,Harmony in Motion,231,280,512
+1552,7223,rock,Midnight Serenade,935,371,513
+1650,3547,gospel,Electric Dreams,2,643,514
+9608,9478,country,Summer Breeze,198,545,515
+3605,6900,hip hop,Electric Dreams,721,342,516
+241,5531,reggae,Harmony in Motion,117,571,517
+3516,1942,pop,Serenade of the Stars,588,359,518
+6531,6448,electronic,Melodies of Love,383,430,519
+5942,8293,metal,Melodies of Love,244,25,520
+6678,8961,latin,Midnight Serenade,494,428,521
+1176,1803,alternative,Whispering Wind,999,21,522
+7477,830,folk,Harmony in Motion,939,49,523
+5299,9284,reggae,Sunshine Day,963,90,524
+6013,4091,punk,Electric Dreams,962,380,525
+3089,7943,jazz,Melodies of Love,417,140,526
+6895,2343,latin,Summer Breeze,318,562,527
+7150,4337,folk,Summer Breeze,286,506,528
+1496,5735,rock,Dancing in the Moonlight,928,15,529
+6431,155,reggae,Summer Breeze,771,747,530
+7985,6490,latin,Midnight Serenade,838,865,531
+8783,9901,gospel,Harmony in Motion,341,786,532
+7645,7779,electronic,Electric Dreams,149,550,533
+9399,8502,classical,Dancing in the Moonlight,728,824,534
+38,4808,reggae,Sunshine Day,919,801,535
+1315,8560,punk,Harmony in Motion,490,197,536
+5362,9924,reggae,Summer Breeze,35,956,537
+7298,5706,dance,Midnight Serenade,766,312,538
+8776,2460,alternative,Melodies of Love,233,758,539
+8134,212,alternative,Sunshine Day,5,963,540
+7577,8598,blues,Whispering Wind,685,253,541
+3903,8663,reggae,Melodies of Love,940,254,542
+8987,1189,electronic,Serenade of the Stars,791,874,543
+3569,3039,electronic,Midnight Serenade,712,603,544
+5778,6487,indie,Whispering Wind,670,909,545
+2780,6541,classical,Rhythm of the Night,586,218,546
+5922,3858,classical,Rhythm of the Night,320,205,547
+8310,293,dance,Sunshine Day,825,415,548
+5524,6192,latin,Rhythm of the Night,993,539,549
+8175,8425,punk,Summer Breeze,742,507,550
+5103,8033,soul,Rhythm of the Night,749,302,551
+5135,9806,blues,Melodies of Love,409,381,552
+7956,2119,latin,Electric Dreams,349,457,553
+2474,6800,alternative,Harmony in Motion,884,868,554
+6051,7671,dance,Midnight Serenade,694,454,555
+1141,7304,rap,Rhythm of the Night,445,796,556
+9453,9603,rap,Melodies of Love,774,421,557
+8945,5755,folk,Melodies of Love,622,984,558
+4636,6625,alternative,Rhythm of the Night,621,729,559
+7794,5449,punk,Rhythm of the Night,475,355,560
+1387,6327,pop,Electric Dreams,494,946,561
+9079,3415,punk,Summer Breeze,403,945,562
+9319,8425,classical,Serenade of the Stars,95,75,563
+7657,9210,blues,Serenade of the Stars,406,606,564
+9498,7712,hip hop,Dancing in the Moonlight,513,486,565
+6796,1036,alternative,Harmony in Motion,374,328,566
+5894,4988,pop,Electric Dreams,699,199,567
+2022,5730,metal,Dancing in the Moonlight,277,645,568
+8208,4948,punk,Midnight Serenade,578,720,569
+8051,5557,soul,Melodies of Love,770,572,570
+1441,8669,reggae,Electric Dreams,782,33,571
+2406,4132,gospel,Sunshine Day,460,301,572
+280,5145,blues,Sunshine Day,426,623,573
+2377,9371,dance,Summer Breeze,554,637,574
+5358,2666,electronic,Rhythm of the Night,761,712,575
+8832,9819,blues,Dancing in the Moonlight,826,834,576
+5695,2432,reggae,Dancing in the Moonlight,599,503,577
+1655,2064,alternative,Dancing in the Moonlight,975,166,578
+2072,3646,rock,Midnight Serenade,393,828,579
+8581,3080,metal,Rhythm of the Night,526,433,580
+3418,5357,alternative,Sunshine Day,866,101,581
+6592,7101,classical,Melodies of Love,455,461,582
+2706,6480,alternative,Melodies of Love,78,246,583
+5220,9048,folk,Dancing in the Moonlight,845,231,584
+9243,8710,blues,Midnight Serenade,508,638,585
+7491,9711,metal,Rhythm of the Night,881,674,586
+6608,5819,pop,Sunshine Day,850,537,587
+8820,4376,reggae,Whispering Wind,972,253,588
+8055,7214,soul,Summer Breeze,270,401,589
+422,9212,r&b,Electric Dreams,176,162,590
+9787,9317,hip hop,Serenade of the Stars,224,404,591
+4807,702,folk,Melodies of Love,726,53,592
+9735,4418,folk,Electric Dreams,751,2,593
+9552,9300,punk,Midnight Serenade,866,454,594
+9385,4353,metal,Whispering Wind,570,599,595
+4906,2405,electronic,Melodies of Love,786,32,596
+3800,9221,hip hop,Rhythm of the Night,564,632,597
+9545,675,rap,Dancing in the Moonlight,424,659,598
+3592,906,folk,Sunshine Day,150,590,599
+2381,7364,hip hop,Melodies of Love,425,957,600
+9490,1525,indie,Summer Breeze,114,978,601
+622,2138,indie,Sunshine Day,967,801,602
+7417,734,r&b,Whispering Wind,25,994,603
+8674,3579,rap,Sunshine Day,858,135,604
+8945,4200,gospel,Whispering Wind,997,919,605
+1261,441,electronic,Harmony in Motion,111,665,606
+5168,1471,hip hop,Melodies of Love,418,212,607
+323,8566,punk,Dancing in the Moonlight,920,231,608
+5334,1929,alternative,Melodies of Love,26,421,609
+3960,6579,electronic,Midnight Serenade,555,565,610
+1552,9925,soul,Melodies of Love,269,450,611
+5680,886,pop,Melodies of Love,31,588,612
+4703,3967,rock,Rhythm of the Night,668,796,613
+2688,1974,rap,Summer Breeze,669,54,614
+834,8197,electronic,Rhythm of the Night,138,953,615
+2434,3652,hip hop,Rhythm of the Night,267,251,616
+8487,5491,country,Midnight Serenade,578,828,617
+3,8575,country,Harmony in Motion,252,14,618
+3432,1506,indie,Midnight Serenade,103,929,619
+1421,4959,soul,Summer Breeze,145,877,620
+4518,3704,metal,Rhythm of the Night,304,826,621
+5244,8753,r&b,Electric Dreams,955,35,622
+6409,5066,r&b,Melodies of Love,388,305,623
+9070,2821,folk,Midnight Serenade,645,409,624
+405,7776,metal,Harmony in Motion,195,522,625
+5781,4041,blues,Sunshine Day,449,915,626
+4305,5280,rap,Dancing in the Moonlight,743,752,627
+1130,4210,blues,Whispering Wind,839,920,628
+9001,12,soul,Summer Breeze,548,107,629
+8198,9704,alternative,Summer Breeze,311,531,630
+3815,4355,alternative,Electric Dreams,146,58,631
+5792,5309,pop,Whispering Wind,896,67,632
+2208,1779,rock,Rhythm of the Night,994,883,633
+9739,8029,dance,Rhythm of the Night,894,55,634
+6104,5043,blues,Rhythm of the Night,91,796,635
+6576,7669,rap,Melodies of Love,812,555,636
+8872,8002,jazz,Midnight Serenade,264,840,637
+1481,62,classical,Rhythm of the Night,118,821,638
+3200,5492,latin,Dancing in the Moonlight,112,158,639
+6049,6471,reggae,Summer Breeze,631,852,640
+9967,6860,indie,Midnight Serenade,889,911,641
+8138,3877,r&b,Summer Breeze,519,637,642
+2950,9748,reggae,Dancing in the Moonlight,492,592,643
+9963,7119,jazz,Electric Dreams,580,333,644
+285,8283,rock,Whispering Wind,556,903,645
+6574,427,punk,Electric Dreams,923,169,646
+9925,7620,latin,Sunshine Day,553,809,647
+3203,5621,country,Dancing in the Moonlight,568,307,648
+5577,2462,r&b,Harmony in Motion,491,859,649
+950,5112,folk,Melodies of Love,800,737,650
+2913,6237,indie,Midnight Serenade,239,743,651
+855,1878,folk,Serenade of the Stars,968,469,652
+8637,9658,r&b,Whispering Wind,391,253,653
+6466,2495,gospel,Serenade of the Stars,996,683,654
+1594,8789,jazz,Serenade of the Stars,329,3,655
+9613,5031,dance,Serenade of the Stars,649,982,656
+2282,9115,folk,Whispering Wind,199,849,657
+368,2673,soul,Serenade of the Stars,890,533,658
+280,1939,pop,Dancing in the Moonlight,802,222,659
+7510,2289,punk,Dancing in the Moonlight,230,15,660
+8959,295,latin,Serenade of the Stars,53,793,661
+1048,6586,r&b,Harmony in Motion,412,102,662
+2927,491,dance,Whispering Wind,410,234,663
+255,9853,reggae,Whispering Wind,381,722,664
+6822,9101,reggae,Melodies of Love,333,481,665
+6339,7971,soul,Melodies of Love,814,376,666
+400,8808,country,Summer Breeze,377,84,667
+9512,3056,pop,Melodies of Love,914,855,668
+6255,2364,punk,Serenade of the Stars,328,861,669
+9422,9051,pop,Sunshine Day,344,963,670
+245,1757,blues,Dancing in the Moonlight,685,166,671
+4175,2349,alternative,Electric Dreams,190,300,672
+1804,7261,alternative,Whispering Wind,355,79,673
+4868,8999,country,Summer Breeze,448,531,674
+526,1714,jazz,Whispering Wind,387,599,675
+1872,7579,blues,Serenade of the Stars,43,496,676
+3713,6157,alternative,Rhythm of the Night,953,647,677
+1687,221,r&b,Dancing in the Moonlight,704,236,678
+6662,3424,blues,Melodies of Love,630,89,679
+6218,4292,dance,Harmony in Motion,835,175,680
+3990,5935,latin,Summer Breeze,335,296,681
+5482,7520,soul,Whispering Wind,268,207,682
+1232,544,metal,Harmony in Motion,316,467,683
+4686,2814,hip hop,Whispering Wind,388,292,684
+1159,5116,punk,Harmony in Motion,690,859,685
+8047,3418,latin,Melodies of Love,494,595,686
+2571,3362,r&b,Electric Dreams,611,152,687
+2097,4247,rap,Midnight Serenade,675,472,688
+5936,1651,gospel,Sunshine Day,547,444,689
+5606,270,latin,Sunshine Day,9,171,690
+8131,6281,punk,Midnight Serenade,963,865,691
+957,1063,alternative,Electric Dreams,248,479,692
+94,3161,dance,Whispering Wind,739,599,693
+926,4398,country,Harmony in Motion,590,896,694
+9205,6782,metal,Serenade of the Stars,540,375,695
+9629,3379,alternative,Harmony in Motion,407,280,696
+9999,3791,metal,Serenade of the Stars,126,520,697
+3010,5925,reggae,Serenade of the Stars,568,810,698
+7295,3969,electronic,Harmony in Motion,932,204,699
+8063,1911,rap,Electric Dreams,183,2,700
+5861,8869,rap,Harmony in Motion,873,125,701
+1377,6474,reggae,Rhythm of the Night,289,821,702
+2445,6314,latin,Dancing in the Moonlight,462,789,703
+6510,6221,electronic,Melodies of Love,71,42,704
+9061,8028,classical,Sunshine Day,966,225,705
+5384,1589,rock,Harmony in Motion,874,924,706
+4290,9074,gospel,Serenade of the Stars,517,530,707
+6305,15,classical,Harmony in Motion,287,334,708
+3800,7639,rock,Whispering Wind,687,633,709
+5220,1087,pop,Sunshine Day,401,358,710
+6040,5210,country,Summer Breeze,163,155,711
+9395,3560,rap,Rhythm of the Night,840,714,712
+4175,716,folk,Sunshine Day,61,661,713
+5938,8152,r&b,Harmony in Motion,635,842,714
+756,3292,punk,Harmony in Motion,701,160,715
+681,3467,blues,Rhythm of the Night,774,362,716
+6692,921,electronic,Serenade of the Stars,254,518,717
+6727,7368,electronic,Melodies of Love,516,693,718
+7806,2774,soul,Sunshine Day,1,444,719
+1759,6313,electronic,Sunshine Day,494,82,720
+8341,1802,punk,Melodies of Love,146,133,721
+9747,3847,rap,Electric Dreams,711,959,722
+6391,9461,hip hop,Whispering Wind,464,919,723
+9685,3844,folk,Dancing in the Moonlight,215,77,724
+6033,6094,hip hop,Whispering Wind,807,731,725
+1931,9589,rock,Harmony in Motion,816,28,726
+9435,4968,folk,Melodies of Love,125,246,727
+1683,6232,country,Melodies of Love,270,73,728
+9419,9348,alternative,Melodies of Love,907,699,729
+6024,9557,latin,Dancing in the Moonlight,819,491,730
+8174,936,hip hop,Midnight Serenade,954,465,731
+6544,4168,gospel,Harmony in Motion,177,14,732
+1884,9676,classical,Dancing in the Moonlight,875,165,733
+7601,1086,r&b,Serenade of the Stars,994,662,734
+3042,4535,metal,Summer Breeze,697,61,735
+8666,3501,reggae,Rhythm of the Night,342,883,736
+1211,170,r&b,Melodies of Love,890,680,737
+915,2245,reggae,Electric Dreams,153,643,738
+7876,7404,r&b,Midnight Serenade,397,735,739
+4005,1831,rap,Serenade of the Stars,432,214,740
+3108,2845,blues,Electric Dreams,552,347,741
+2179,6354,classical,Melodies of Love,172,536,742
+3682,951,indie,Rhythm of the Night,727,97,743
+8573,1511,alternative,Whispering Wind,618,268,744
+1528,6933,rap,Midnight Serenade,259,980,745
+5365,7755,indie,Dancing in the Moonlight,657,1,746
+6584,798,electronic,Whispering Wind,871,599,747
+9900,2436,classical,Whispering Wind,351,213,748
+2268,2524,electronic,Melodies of Love,505,452,749
+8367,5603,gospel,Summer Breeze,6,434,750
+4260,8087,rock,Midnight Serenade,822,16,751
+7458,8958,indie,Harmony in Motion,372,869,752
+5855,5542,latin,Dancing in the Moonlight,571,889,753
+9067,1477,blues,Serenade of the Stars,388,36,754
+3506,5587,country,Electric Dreams,206,447,755
+1988,5808,indie,Serenade of the Stars,70,375,756
+5937,642,indie,Electric Dreams,831,152,757
+3317,7755,latin,Midnight Serenade,739,72,758
+1265,6722,indie,Summer Breeze,592,74,759
+6798,5929,blues,Melodies of Love,958,140,760
+954,9678,rap,Serenade of the Stars,893,284,761
+9760,7250,pop,Midnight Serenade,458,929,762
+8556,2315,punk,Rhythm of the Night,808,769,763
+3148,8380,reggae,Sunshine Day,436,69,764
+7361,8906,indie,Rhythm of the Night,106,55,765
+2153,1369,soul,Serenade of the Stars,510,850,766
+6210,7128,rap,Harmony in Motion,554,620,767
+2499,4569,r&b,Whispering Wind,183,897,768
+842,7818,rap,Harmony in Motion,131,815,769
+26,6862,rock,Dancing in the Moonlight,398,293,770
+3930,5131,rock,Electric Dreams,707,216,771
+6423,5244,reggae,Sunshine Day,240,784,772
+8891,9926,country,Dancing in the Moonlight,236,788,773
+596,2074,gospel,Rhythm of the Night,556,317,774
+2457,810,dance,Serenade of the Stars,583,496,775
+6435,7218,blues,Serenade of the Stars,553,326,776
+9372,1476,hip hop,Harmony in Motion,648,197,777
+2257,2923,country,Midnight Serenade,168,535,778
+4825,3412,hip hop,Whispering Wind,866,955,779
+6814,7867,indie,Rhythm of the Night,532,739,780
+6073,131,jazz,Rhythm of the Night,32,653,781
+6282,5911,gospel,Electric Dreams,938,162,782
+8373,8531,soul,Sunshine Day,100,756,783
+7582,8518,alternative,Harmony in Motion,906,962,784
+6023,6156,classical,Whispering Wind,106,490,785
+3171,5750,gospel,Dancing in the Moonlight,802,596,786
+3957,1034,indie,Harmony in Motion,625,868,787
+6967,6116,pop,Melodies of Love,657,318,788
+7190,738,latin,Harmony in Motion,957,730,789
+5004,654,blues,Whispering Wind,624,820,790
+1634,918,latin,Whispering Wind,288,451,791
+7594,7667,alternative,Melodies of Love,822,589,792
+2542,4878,metal,Midnight Serenade,559,423,793
+7778,8979,alternative,Melodies of Love,729,863,794
+2223,4513,classical,Sunshine Day,310,593,795
+8762,714,hip hop,Harmony in Motion,185,767,796
+9842,2364,pop,Midnight Serenade,438,828,797
+588,8615,reggae,Whispering Wind,607,482,798
+8535,3791,folk,Summer Breeze,893,852,799
+4638,8044,gospel,Whispering Wind,797,345,800
+7270,4966,electronic,Summer Breeze,435,587,801
+3560,7853,metal,Dancing in the Moonlight,545,252,802
+886,6655,punk,Summer Breeze,390,128,803
+3138,2710,country,Summer Breeze,448,22,804
+5255,9872,latin,Rhythm of the Night,451,164,805
+7332,6878,pop,Electric Dreams,552,13,806
+8326,394,rap,Summer Breeze,934,255,807
+5635,7414,electronic,Harmony in Motion,428,243,808
+5744,4300,jazz,Serenade of the Stars,214,316,809
+1870,1375,reggae,Melodies of Love,382,123,810
+4622,9607,country,Whispering Wind,29,350,811
+8616,4120,jazz,Harmony in Motion,520,966,812
+4572,9666,metal,Dancing in the Moonlight,626,753,813
+6376,5706,reggae,Whispering Wind,964,207,814
+3953,4448,soul,Dancing in the Moonlight,721,889,815
+5586,8866,gospel,Rhythm of the Night,654,917,816
+4133,7705,r&b,Sunshine Day,731,4,817
+8914,5290,punk,Electric Dreams,575,5,818
+2201,1945,gospel,Harmony in Motion,733,68,819
+2943,6328,country,Dancing in the Moonlight,4,613,820
+6606,3489,blues,Harmony in Motion,457,328,821
+176,6018,jazz,Electric Dreams,68,887,822
+3049,9879,pop,Midnight Serenade,801,325,823
+6553,3099,reggae,Electric Dreams,22,479,824
+1953,4582,pop,Harmony in Motion,281,51,825
+7874,2539,electronic,Summer Breeze,225,484,826
+6518,3151,blues,Serenade of the Stars,396,759,827
+1272,4765,blues,Dancing in the Moonlight,678,824,828
+7299,3213,classical,Harmony in Motion,183,868,829
+6099,510,reggae,Melodies of Love,317,569,830
+1893,7024,latin,Whispering Wind,594,83,831
+506,4883,metal,Serenade of the Stars,641,273,832
+2938,234,gospel,Midnight Serenade,601,132,833
+4312,8196,folk,Melodies of Love,233,57,834
+6144,7499,hip hop,Serenade of the Stars,164,367,835
+8144,2691,country,Dancing in the Moonlight,372,559,836
+4885,2728,hip hop,Serenade of the Stars,857,141,837
+3320,612,folk,Rhythm of the Night,181,750,838
+6117,2749,blues,Melodies of Love,208,238,839
+7636,4071,folk,Whispering Wind,391,526,840
+8630,5649,folk,Melodies of Love,291,461,841
+2584,5751,dance,Harmony in Motion,571,390,842
+3634,1763,dance,Dancing in the Moonlight,987,170,843
+4949,4262,dance,Sunshine Day,64,1000,844
+7253,8423,punk,Sunshine Day,927,694,845
+4480,4561,metal,Rhythm of the Night,883,656,846
+1622,5875,r&b,Melodies of Love,981,755,847
+4498,8976,country,Midnight Serenade,667,668,848
+612,9680,r&b,Midnight Serenade,809,936,849
+1255,5452,hip hop,Electric Dreams,524,969,850
+9128,7116,metal,Electric Dreams,210,635,851
+85,3768,folk,Melodies of Love,910,305,852
+3900,6968,gospel,Whispering Wind,852,83,853
+781,1412,r&b,Harmony in Motion,747,896,854
+7140,8030,reggae,Rhythm of the Night,427,70,855
+7936,7501,indie,Midnight Serenade,800,601,856
+7270,8742,rap,Rhythm of the Night,895,362,857
+8760,5524,punk,Melodies of Love,375,376,858
+698,8389,classical,Sunshine Day,909,120,859
+6470,5466,folk,Sunshine Day,946,348,860
+2440,1413,alternative,Dancing in the Moonlight,865,923,861
+4795,6021,indie,Serenade of the Stars,194,124,862
+919,1783,reggae,Sunshine Day,408,931,863
+7514,1375,rap,Serenade of the Stars,38,94,864
+4920,7366,metal,Rhythm of the Night,109,971,865
+41,7839,soul,Serenade of the Stars,537,174,866
+8119,5964,electronic,Rhythm of the Night,483,346,867
+1252,9769,punk,Melodies of Love,382,640,868
+322,3726,classical,Whispering Wind,665,324,869
+4219,7757,pop,Rhythm of the Night,515,900,870
+7290,7358,rap,Dancing in the Moonlight,778,677,871
+47,267,dance,Summer Breeze,649,191,872
+1851,8573,alternative,Whispering Wind,745,820,873
+5361,8444,reggae,Dancing in the Moonlight,572,170,874
+427,6186,reggae,Serenade of the Stars,428,848,875
+7027,883,rock,Harmony in Motion,357,108,876
+6457,5115,rock,Serenade of the Stars,414,853,877
+4014,4073,latin,Rhythm of the Night,754,164,878
+9581,6899,latin,Dancing in the Moonlight,713,788,879
+5493,2968,country,Melodies of Love,80,952,880
+3645,4437,metal,Serenade of the Stars,629,702,881
+6785,3725,dance,Rhythm of the Night,444,412,882
+9302,3343,pop,Rhythm of the Night,603,712,883
+3775,4840,reggae,Sunshine Day,489,329,884
+1481,9134,gospel,Harmony in Motion,126,51,885
+1972,8322,r&b,Sunshine Day,302,110,886
+8215,4985,pop,Summer Breeze,720,61,887
+6034,7669,blues,Serenade of the Stars,657,520,888
+1056,9849,folk,Harmony in Motion,198,910,889
+2196,7613,blues,Midnight Serenade,978,143,890
+5295,4999,r&b,Dancing in the Moonlight,250,525,891
+8773,2341,pop,Melodies of Love,380,973,892
+316,7645,folk,Melodies of Love,182,640,893
+4634,2801,metal,Midnight Serenade,191,601,894
+9226,5291,indie,Serenade of the Stars,312,666,895
+5434,6891,country,Whispering Wind,857,696,896
+8200,6573,metal,Harmony in Motion,749,767,897
+1731,4908,dance,Summer Breeze,175,331,898
+2395,9055,rock,Dancing in the Moonlight,776,789,899
+8354,941,gospel,Dancing in the Moonlight,559,753,900
+8708,5075,gospel,Whispering Wind,92,687,901
+3582,8431,dance,Sunshine Day,462,120,902
+5838,1814,folk,Melodies of Love,798,11,903
+2534,114,latin,Sunshine Day,947,913,904
+4587,585,indie,Rhythm of the Night,130,387,905
+9551,5774,punk,Melodies of Love,487,595,906
+7283,7525,electronic,Whispering Wind,988,549,907
+2821,9944,reggae,Summer Breeze,974,682,908
+7560,8752,jazz,Whispering Wind,771,781,909
+6101,910,jazz,Rhythm of the Night,984,414,910
+5352,400,classical,Summer Breeze,259,54,911
+3654,6041,classical,Melodies of Love,921,470,912
+2758,9972,rock,Dancing in the Moonlight,458,659,913
+5509,4266,gospel,Midnight Serenade,179,357,914
+165,8442,alternative,Sunshine Day,632,809,915
+7982,6755,rap,Electric Dreams,73,152,916
+1970,6176,punk,Melodies of Love,568,952,917
+3371,1657,indie,Serenade of the Stars,719,577,918
+2633,7951,gospel,Rhythm of the Night,20,949,919
+1976,519,indie,Whispering Wind,571,344,920
+3747,534,indie,Melodies of Love,621,140,921
+9306,1742,punk,Electric Dreams,284,304,922
+1597,7080,folk,Electric Dreams,793,420,923
+4260,9496,pop,Electric Dreams,413,642,924
+9859,1510,hip hop,Midnight Serenade,489,366,925
+4561,8733,country,Sunshine Day,550,24,926
+9571,6872,jazz,Midnight Serenade,457,127,927
+7886,4700,blues,Melodies of Love,496,569,928
+6846,8802,jazz,Midnight Serenade,914,798,929
+6461,6010,punk,Sunshine Day,90,417,930
+8310,7710,r&b,Rhythm of the Night,22,971,931
+101,4717,blues,Harmony in Motion,493,727,932
+5234,1610,soul,Electric Dreams,626,983,933
+478,3694,indie,Melodies of Love,955,898,934
+1392,361,reggae,Melodies of Love,92,470,935
+3640,969,rock,Whispering Wind,702,675,936
+777,2529,classical,Whispering Wind,261,482,937
+3221,5072,soul,Melodies of Love,243,493,938
+3779,9770,alternative,Electric Dreams,628,457,939
+1559,8528,pop,Dancing in the Moonlight,254,523,940
+5926,9068,latin,Electric Dreams,325,492,941
+1447,1553,rap,Rhythm of the Night,907,438,942
+7091,6481,jazz,Rhythm of the Night,850,116,943
+5576,1439,pop,Midnight Serenade,716,684,944
+6236,8775,pop,Midnight Serenade,627,760,945
+3029,860,reggae,Melodies of Love,567,411,946
+2395,3565,rock,Summer Breeze,847,567,947
+429,8209,classical,Electric Dreams,903,856,948
+2419,3883,classical,Midnight Serenade,877,668,949
+5287,5958,dance,Dancing in the Moonlight,691,1,950
+2561,6244,r&b,Serenade of the Stars,787,316,951
+2970,5591,soul,Sunshine Day,66,763,952
+5874,6248,soul,Melodies of Love,869,699,953
+3039,1615,electronic,Electric Dreams,575,389,954
+8092,3054,latin,Summer Breeze,473,22,955
+1789,6041,pop,Rhythm of the Night,69,651,956
+397,3637,soul,Midnight Serenade,590,865,957
+8124,660,gospel,Midnight Serenade,195,517,958
+8902,7520,gospel,Serenade of the Stars,75,861,959
+8143,8820,dance,Midnight Serenade,804,118,960
+9001,6989,hip hop,Melodies of Love,283,995,961
+532,4920,blues,Whispering Wind,390,451,962
+2399,5933,reggae,Midnight Serenade,827,718,963
+6959,2084,latin,Dancing in the Moonlight,532,261,964
+2072,5403,r&b,Whispering Wind,136,849,965
+3182,9712,reggae,Serenade of the Stars,167,124,966
+345,8768,country,Dancing in the Moonlight,429,752,967
+624,9883,classical,Whispering Wind,218,183,968
+10,6256,pop,Whispering Wind,161,943,969
+7421,5045,rap,Midnight Serenade,472,798,970
+3262,3327,soul,Summer Breeze,557,877,971
+1211,7724,dance,Harmony in Motion,643,644,972
+9658,2118,folk,Sunshine Day,192,537,973
+7135,6771,punk,Electric Dreams,162,389,974
+50,8127,country,Whispering Wind,141,350,975
+5132,1109,reggae,Rhythm of the Night,600,436,976
+9346,389,punk,Midnight Serenade,514,454,977
+7212,5184,rap,Harmony in Motion,672,522,978
+8211,3191,jazz,Rhythm of the Night,400,917,979
+4562,7204,folk,Dancing in the Moonlight,623,805,980
+6270,5429,jazz,Melodies of Love,894,609,981
+4410,7663,folk,Electric Dreams,814,941,982
+5748,4732,blues,Summer Breeze,361,408,983
+8067,4799,jazz,Electric Dreams,838,256,984
+6943,8105,dance,Rhythm of the Night,651,700,985
+9635,6371,indie,Melodies of Love,974,285,986
+2419,5213,punk,Summer Breeze,261,682,987
+5584,8586,rap,Sunshine Day,927,405,988
+8030,3242,latin,Midnight Serenade,887,989,989
+4595,4805,country,Electric Dreams,114,643,990
+1050,6940,country,Whispering Wind,48,731,991
+182,9433,folk,Dancing in the Moonlight,522,181,992
+7502,6929,jazz,Whispering Wind,146,919,993
+925,1116,reggae,Electric Dreams,589,304,994
+3455,6233,soul,Dancing in the Moonlight,433,834,995
+2247,4887,metal,Harmony in Motion,242,204,996
+9028,2472,pop,Serenade of the Stars,447,310,997
+283,6250,blues,Melodies of Love,917,381,998
+271,3478,hip hop,Sunshine Day,303,475,999
+4312,3709,dance,Melodies of Love,869,588,1000
