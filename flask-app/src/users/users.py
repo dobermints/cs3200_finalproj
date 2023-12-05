@@ -114,7 +114,7 @@ def delete_user_account(username):
 @users.route('/users/friends/<username>', methods=['GET'])
 def get_user_friends(username):
     cursor = db.get_db().cursor()
-    cursor.execute('select * from User JOIN (select * Friends where requestUsername = {0}'.format(username) + ') as a ON a.acceptUsername = User.username;')
+    cursor.execute('select * from User JOIN (select * from Friends where requestUsername = {0}'.format(username) + ') as a ON a.acceptUsername = User.username;')
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -126,7 +126,7 @@ def get_user_friends(username):
     return the_response
 
 # Add a friendship between two users
-@users.route('/users/friends/', methods=['POST'])
+@users.route('/users/friends', methods=['POST'])
 def add_friendship():
     cursor = db.get_db().cursor()
     the_data = request.json

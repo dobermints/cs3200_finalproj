@@ -5,7 +5,7 @@ from src import db
 catalogs = Blueprint('catalogs', __name__)
 
 # Create/make public catalog
-@catalogs.route('/catalog', methods=['POST'])
+@catalogs.route('/catalogs', methods=['POST'])
 def create_catalog_listing():
     
     # collecting data from the request object 
@@ -55,7 +55,7 @@ def get_catalog(catalogID):
     return the_response
 
 # Update a song catalog
-@catalogs.route('/catalog/<catalogID>', methods=['PUT'])
+@catalogs.route('/catalogs/<catalogID>', methods=['PUT'])
 def update_catalog_listing(catalogID):
     cursor = db.get_db().cursor()
     the_data = request.json
@@ -80,7 +80,7 @@ def update_catalog_listing(catalogID):
     return 'Success!'
 
 # Delete catalog for a specific catalogID
-@catalogs.route('/catalog/<catalogID>', methods=['DELETE'])
+@catalogs.route('/catalogs/<catalogID>', methods=['DELETE'])
 def delete_catalog_listing(catalogID):
     cursor = db.get_db().cursor()
     
@@ -92,8 +92,8 @@ def delete_catalog_listing(catalogID):
     return 'Success!'
 
 # Get catalog based on genre
-@catalogs.route('/catalogs/genre/<genre>', methods=['GET'])
-def get_catalog(genre):
+@catalogs.route('/catalogs/catalog-genre/<genre>', methods=['GET'])
+def filter_catalog_by_genre(genre):
     cursor = db.get_db().cursor()
     cursor.execute('select * from SongCatalog where genre = {0}'.format(genre))
     row_headers = [x[0] for x in cursor.description]
@@ -108,7 +108,7 @@ def get_catalog(genre):
 
 # Get the genre of a particular catalog
 @catalogs.route('/catalogs/genre/<catalogID>', methods=['GET'])
-def get_catalog(catalogID):
+def get_genre_of_catalog(catalogID):
     cursor = db.get_db().cursor()
     cursor.execute('select genre from SongCatalog where catalogID = {0}'.format(catalogID))
     row_headers = [x[0] for x in cursor.description]

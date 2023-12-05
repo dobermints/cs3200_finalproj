@@ -170,3 +170,5 @@ CREATE TABLE Friends (
 INSERT INTO Artist (username, firstName, lastName, stageName, country, dateJoined, phone, email, genre, dayRank, monthRank, weekRank, totalDislikes, totalLikes, dateOfBirth)
 VALUE ('davidzhang0', 'David', 'Zhang', 'davidz', 'USA', NOW(), 6316379598, 'dzhang.og@gmail.com', 'jazz', 1, 1, 1, 0, 0, NOW());
 
+    
+select * from User JOIN (select * from Friends where requestUsername = 'davidzhang0') as a ON a.acceptUsername = User.username;

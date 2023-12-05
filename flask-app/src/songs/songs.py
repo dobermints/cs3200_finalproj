@@ -70,7 +70,7 @@ def delete_song(songID):
     return 'Success!'
 
 # Get all songs in database
-@songs.route('/songs/', methods=['GET'])
+@songs.route('/songs', methods=['GET'])
 def get_all_songs():
     cursor = db.get_db().cursor()
     cursor.execute('select * from Song;')
@@ -85,7 +85,7 @@ def get_all_songs():
     return the_response
 
 # Add song to the app for an artist
-@songs.route('/songs/', methods=['POST'])
+@songs.route('/songs', methods=['POST'])
 def create_song():
     
     # collecting data from the request object 
@@ -130,7 +130,7 @@ def create_song():
     return 'Success!'
 
 # Get all songs and their likes
-@songs.route('/songs/likes/', methods=['GET'])
+@songs.route('/songs/likes', methods=['GET'])
 def get_all_song_likes():
     cursor = db.get_db().cursor()
     cursor.execute('select songID, title, likes from Song;')
@@ -160,17 +160,20 @@ def get_one_song_likes(songID):
     return the_response
 
 # Toggle a like to a specific song
-@songs.route('/songs/likes/<songID>/<username>', methods=['PUT'])
-def toggle_song_likes(songID=None, username=None):
+@songs.route('/songs/likes', methods=['PUT'])
+def toggle_song_likes():
     cursor = db.get_db().cursor()
     
     the_data = request.json
     current_app.logger.info(the_data)
     
+    songID = the_data['songID']
+    userUsername = the_data['userUsername']
+    
     # grab songId and previous unchangeable details
     songInfo = get_song(songID)
     
-    query_to_check_if_liked = 'SELECT count(*) FROM SongLikes WHERE songID = ' + songID + ' AND userUsername = ' + username + ";"
+    query_to_check_if_liked = 'SELECT count(*) FROM SongLikes WHERE songID = ' + songID + ' AND userUsername = ' + userUsername + ";"
     
     if query_to_check_if_liked == 0: # not liked yet
         
@@ -182,7 +185,7 @@ def toggle_song_likes(songID=None, username=None):
         
         querySongLikes = 'INSERT INTO SongLikes (songID, userUsername) VALUES ('
         querySongLikes += str(songID) + ', '
-        querySongLikes += str(username) + ");"
+        querySongLikes += str(userUsername) + ");"
         
     elif query_to_check_if_liked == 1: # already liked song being unliked
         
@@ -192,7 +195,7 @@ def toggle_song_likes(songID=None, username=None):
         
         querySongLikes = 'DELETE FROM SongLikes WHERE'
         querySongLikes += "songID = " + str(songID) + " AND "
-        querySongLikes += "userUsername = " + str(username) + ");"
+        querySongLikes += "userUsername = " + str(userUsername) + ");"
         
     else:
         raise Exception('Error updating likes')
@@ -222,16 +225,19 @@ def get_one_song_dislikes(songID):
 
 # DO NOT USE, WE HAVE NOT CREATED A SongDislikes TABLE BUT THE PROCESS IS THE SAME AS toggle_song_likes
 # Toggle a dislike to a specific song
-@songs.route('/songs/dislikes/<songID>/<username>', methods=['PUT'])
-def toggle_song_dislikes(songID=None, username=None):
+@songs.route('/songs/dislikes', methods=['PUT'])
+def toggle_song_dislikes():
     cursor = db.get_db().cursor()
     
     the_data = request.json
     current_app.logger.info(the_data)
     
+    songID = the_data['songID']
+    userUsername = the_data['userUsername']
+    
     songInfo = get_song(songID)
     
-    query_to_check_if_disliked = 'SELECT count(*) FROM SongDislikes WHERE songID = ' + songID + ' AND userUsername = ' + username + ";"
+    query_to_check_if_disliked = 'SELECT count(*) FROM SongDislikes WHERE songID = ' + songID + ' AND userUsername = ' + userUsername + ";"
     
     if query_to_check_if_disliked == 0: # not disliked yet
         
@@ -243,7 +249,7 @@ def toggle_song_dislikes(songID=None, username=None):
         
         querySongDislikes = 'INSERT INTO SongDislikes (songID, userUsername) VALUES ('
         querySongDislikes += str(songID) + ', '
-        querySongDislikes += str(username) + ");"
+        querySongDislikes += str(userUsername) + ");"
         
     elif query_to_check_if_disliked == 1: # already disliked song being un-disliked
         
@@ -253,7 +259,7 @@ def toggle_song_dislikes(songID=None, username=None):
         
         querySongDislikes = 'DELETE FROM SongDislikes WHERE'
         querySongDislikes += "songID = " + str(songID) + " AND "
-        querySongDislikes += "userUsername = " + str(username) + ");"
+        querySongDislikes += "userUsername = " + str(userUsername) + ");"
         
     else:
         raise Exception('Error updating dislikes')
@@ -267,11 +273,14 @@ def toggle_song_dislikes(songID=None, username=None):
     return 'Successful update'
 
 # Update the genre attribute for a particular song
-@songs.route('/songs/genre/<genre>/<songID>', methods=['PUT'])
-def genre_update_song(genre = None, songID = None):
+@songs.route('/songs/genre', methods=['PUT'])
+def genre_update_song():
     cursor = db.get_db().cursor()
     the_data = request.json
     current_app.logger.info(the_data)
+    
+    genre = the_data['genre']
+    songID = the_data['songID']
     
     query = 'UPDATE Song SET '
     query += 'genre = ' + str(genre) + ' '
@@ -284,7 +293,7 @@ def genre_update_song(genre = None, songID = None):
     return 'Successful update'
 
 # Get song rank based off songID
-@songs.route('/songs/rank/<SongID>', methods=['GET'])
+@songs.route('/songs/rank/<songID>', methods=['GET'])
 def get_song_rank(songID):
     cursor = db.get_db().cursor()
     cursor.execute('select dayRank, monthRank, weekRank from Song where songID = {0}'.format(songID))

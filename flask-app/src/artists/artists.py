@@ -42,9 +42,10 @@ def add_new_artist():
     total_dislikes = the_data['totalDislikes']
     total_likes = the_data['totalLikes']
     date_of_birth = the_data['dateOfBirth']
+    genre = the_data['genre']
     
     # Constructing the query
-    query = 'insert into Artist (username, firstName, lastName, stageName, country, dateJoined, phone, email, dayRank, monthRank, weekRank, totalDislikes, totalLikes, dateOfBirth) values ("'
+    query = 'insert into Artist (username, firstName, lastName, stageName, country, dateJoined, phone, email, genre, dayRank, monthRank, weekRank, totalDislikes, totalLikes, dateOfBirth) values ("'
     query += username + ', '
     query += first_name + ', '
     query += last_name + ', '
@@ -53,6 +54,7 @@ def add_new_artist():
     query += date_joined + ', '
     query += str(phone) + ', '
     query += email + ', '
+    query += genre + ', '
     query += str(dayRank) + ', '
     query += str(monthRank) + ', '
     query += str(weekRank) + ', '
@@ -187,26 +189,11 @@ def get_artist_by_genre(genre):
     the_response.mimetype = 'application/json'
     return the_response
 
-# Get artists based off artist genre
-@artists.route('/artists/genre/<genre>', methods=['GET'])
-def get_artist_by_genre(genre):
-    cursor = db.get_db().cursor()
-    cursor.execute('select username, stageName, country, dateJoined, totalLikes, totalDislikes, dayRank, weekRank, monthRank from Artist where genre = {0}'.format(genre))
-    row_headers = [x[0] for x in cursor.description]
-    json_data = []
-    theData = cursor.fetchall()
-    for row in theData:
-        json_data.append(dict(zip(row_headers, row)))
-    the_response = make_response(jsonify(json_data))
-    the_response.status_code = 200
-    the_response.mimetype = 'application/json'
-    return the_response
-
 # Get totalLikes of an artist
 @artists.route('/artists/likes/<username>', methods=['GET'])
 def get_artist_likes(username):
     cursor = db.get_db().cursor()
-    cursor.execute('select totalLikes from Artist where genre = {0}'.format(username))
+    cursor.execute('select totalLikes from Artist where username = {0}'.format(username))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -221,7 +208,7 @@ def get_artist_likes(username):
 @artists.route('/artists/dislikes/<username>', methods=['GET'])
 def get_artist_dislikes(username):
     cursor = db.get_db().cursor()
-    cursor.execute('select totalDislikes from Artist where genre = {0}'.format(username))
+    cursor.execute('select totalDislikes from Artist where username = {0}'.format(username))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
