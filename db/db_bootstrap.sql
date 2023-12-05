@@ -25,15 +25,15 @@ CREATE TABLE Artist (
     lastName varchar(255) NOT NULL,
     stageName varchar(255) NOT NULL,
     country varchar(255) NOT NULL,
-    dateJoined DATE,
-    phone VARCHAR(10),
-    email varchar(255),
+    dateJoined DATE DEFAULT NOW(),
+    phone VARCHAR(10) UNIQUE,
+    email varchar(255) UNIQUE,
     genre varchar(255),
-    dayRank INT,
-    monthRank INT,
-    weekRank INT,
-    totalDislikes INT,
-    totalLikes INT,
+    dayRank INT UNIQUE DEFAULT NULL,
+    monthRank INT UNIQUE DEFAULT NULL,
+    weekRank INT UNIQUE DEFAULT NULL,
+    totalDislikes INT DEFAULT 0,
+    totalLikes INT DEFAULT 0,
     dateOfBirth DATE
 );
 
@@ -166,9 +166,9 @@ CREATE TABLE Friends (
         ON DELETE CASCADE
 );
 
+
 -- Add sample data.
+DELETE FROM Artist;
+
 INSERT INTO Artist (username, firstName, lastName, stageName, country, dateJoined, phone, email, genre, dayRank, monthRank, weekRank, totalDislikes, totalLikes, dateOfBirth)
 VALUE ('davidzhang0', 'David', 'Zhang', 'davidz', 'USA', NOW(), 6316379598, 'dzhang.og@gmail.com', 'jazz', 1, 1, 1, 0, 0, NOW());
-
-    
-select * from User JOIN (select * from Friends where requestUsername = 'davidzhang0') as a ON a.acceptUsername = User.username;

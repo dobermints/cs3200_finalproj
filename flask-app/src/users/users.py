@@ -24,14 +24,14 @@ def add_new_user():
     
     # Constructing the query
     query = 'insert into User (username, firstName, lastName, country, dateJoined, phone, email, dateOfBirth) values ("'
-    query += username + ', '
-    query += first_name + ', '
-    query += last_name + ', '
-    query += country + ', '
-    query += date_joined + ', '
-    query += str(phone) + ', '
-    query += email + ', '
-    query += str(date_of_birth) + ');'
+    query += '"' + username + '", '
+    query += '"' + first_name + '", '
+    query += '"' + last_name + '", '
+    query += '"' + country + '", '
+    query += '"' + date_joined + '", '
+    query += '"' + str(phone) + '", '
+    query += '"' + email + '", '
+    query += '"' + str(date_of_birth) + '");'
     current_app.logger.info(query)
 
     # executing and committing the insert statement 
@@ -84,12 +84,12 @@ def update_user_account(username):
     dob = the_data['dateOfBirth']
     
     query = 'UPDATE User SET '
-    query += 'email = ' + str(email) + ', '
-    query += 'firstName = ' + str(firstName) + ', '
-    query += 'lastName = ' + str(lastName) + ', '
-    query += 'country = ' + str(country) + ', '
-    query += 'phone = ' + str(phone) + ', '
-    query += 'dateOfBirth = ' + str(dob) + ' '
+    query += 'email = "' + str(email) + '", '
+    query += 'firstName = "' + str(firstName) + '", '
+    query += 'lastName = "' + str(lastName) + '", '
+    query += 'country = "' + str(country) + '", '
+    query += 'phone = "' + str(phone) + '", '
+    query += 'dateOfBirth = "' + str(dob) + '" '
     query += 'WHERE username = {0};'.format(username)
 
     cursor.execute(query)

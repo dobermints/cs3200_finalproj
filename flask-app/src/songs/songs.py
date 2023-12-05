@@ -39,9 +39,9 @@ def limited_update_song(songID):
     title = the_data['title']
     
     query = 'UPDATE Song SET '
-    query += 'genre = ' + str(genre) + ', '
-    query += 'language = ' + str(language) + ', '
-    query += 'title = ' + str(title) + ' '
+    query += 'genre = "' + str(genre) + '", '
+    query += 'language = "' + str(language) + '", '
+    query += 'title = "' + str(title) + '" '
     query += 'WHERE songID = {0};'.format(songID)
 
     cursor.execute(query)
@@ -108,18 +108,18 @@ def create_song():
     
     # Constructing the query
     query = 'insert into Song (songID, genre, language, title, duration, dateReleased, dayRank, monthRank, weekRank, dislikes, likes, artistUsername) values ("'
-    query += str(songID) + ', '
-    query += genre + ', '
-    query += language + ', '
-    query += title + ', '
-    query += str(duration) + ', '
-    query += str(dateReleased) + ', '
-    query += str(dayRank) + ', '
-    query += str(monthRank) + ', '
-    query += str(weekRank) + ', '
-    query += str(dislikes) + ', '
-    query += str(likes) + ', '
-    query += str(artistUsername) + ')'
+    query += '"' + str(songID) + '", '
+    query += '"' + genre + '", '
+    query += '"' + language + '", '
+    query += '"' + title + '", '
+    query += '"' + str(duration) + '", '
+    query += '"' + str(dateReleased) + '", '
+    query += '"' + str(dayRank) + '", '
+    query += '"' + str(monthRank) + '", '
+    query += '"' + str(weekRank) + '", '
+    query += '"' + str(dislikes) + '", '
+    query += '"' + str(likes) + '", '
+    query += '"' + str(artistUsername) + '")'
     current_app.logger.info(query)
 
     # executing and committing the insert statement 
@@ -180,22 +180,22 @@ def toggle_song_likes():
         prev_likes = songInfo['likes']
     
         querySong = 'UPDATE Song SET '
-        querySong += 'likes = ' + str(prev_likes + 1) + ' '
+        querySong += 'likes = "' + str(prev_likes + 1) + '" '
         querySong += 'WHERE songID = {0};'.format(songID)
         
         querySongLikes = 'INSERT INTO SongLikes (songID, userUsername) VALUES ('
-        querySongLikes += str(songID) + ', '
-        querySongLikes += str(userUsername) + ");"
+        querySongLikes += '"' + str(songID) + '", '
+        querySongLikes += '"' + str(userUsername) + ");"
         
     elif query_to_check_if_liked == 1: # already liked song being unliked
         
         querySong = 'UPDATE Song SET '
-        querySong += 'likes = ' + str(prev_likes - 1) + ' '
+        querySong += 'likes = "' + str(prev_likes - 1) + '" '
         querySong += 'WHERE songID = {0};'.format(songID)
         
         querySongLikes = 'DELETE FROM SongLikes WHERE'
-        querySongLikes += "songID = " + str(songID) + " AND "
-        querySongLikes += "userUsername = " + str(userUsername) + ");"
+        querySongLikes += 'songID = "' + str(songID) + '" AND '
+        querySongLikes += 'userUsername = "' + str(userUsername) + '");'
         
     else:
         raise Exception('Error updating likes')
@@ -244,22 +244,22 @@ def toggle_song_dislikes():
         prev_dislikes = songInfo['dislikes']
     
         querySong = 'UPDATE Song SET '
-        querySong += 'dislikes = ' + str(prev_dislikes + 1) + ' '
+        querySong += 'dislikes = "' + str(prev_dislikes + 1) + '" '
         querySong += 'WHERE songID = {0};'.format(songID)
         
         querySongDislikes = 'INSERT INTO SongDislikes (songID, userUsername) VALUES ('
-        querySongDislikes += str(songID) + ', '
-        querySongDislikes += str(userUsername) + ");"
+        querySongDislikes += '"' + str(songID) + '", '
+        querySongDislikes += '"' + str(userUsername) + '");'
         
     elif query_to_check_if_disliked == 1: # already disliked song being un-disliked
         
         querySong = 'UPDATE Song SET '
-        querySong += 'dislikes = ' + str(prev_dislikes - 1) + ' '
+        querySong += 'dislikes = "' + str(prev_dislikes - 1) + '" '
         querySong += 'WHERE songID = {0};'.format(songID)
         
         querySongDislikes = 'DELETE FROM SongDislikes WHERE'
-        querySongDislikes += "songID = " + str(songID) + " AND "
-        querySongDislikes += "userUsername = " + str(userUsername) + ");"
+        querySongDislikes += 'songID = "' + str(songID) + '" AND '
+        querySongDislikes += 'userUsername = "' + str(userUsername) + '");'
         
     else:
         raise Exception('Error updating dislikes')
@@ -283,7 +283,7 @@ def genre_update_song():
     songID = the_data['songID']
     
     query = 'UPDATE Song SET '
-    query += 'genre = ' + str(genre) + ' '
+    query += 'genre = "' + str(genre) + '" '
     query += 'WHERE songID = {0};'.format(songID)
 
     cursor.execute(query)

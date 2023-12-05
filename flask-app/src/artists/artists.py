@@ -32,35 +32,23 @@ def add_new_artist():
     first_name = the_data['firstName']
     last_name = the_data['lastName']
     stage_name = the_data['stageName']
-    country = the_data['country']
-    date_joined = the_data['dateJoined']
-    phone = the_data['phone']
     email = the_data['email']
-    dayRank = the_data['dayRank']
-    monthRank = the_data['monthRank']
-    weekRank = the_data['weekRank']
-    total_dislikes = the_data['totalDislikes']
-    total_likes = the_data['totalLikes']
+    phone = the_data['phone']
+    country = the_data['country']
     date_of_birth = the_data['dateOfBirth']
     genre = the_data['genre']
     
     # Constructing the query
-    query = 'insert into Artist (username, firstName, lastName, stageName, country, dateJoined, phone, email, genre, dayRank, monthRank, weekRank, totalDislikes, totalLikes, dateOfBirth) values ("'
-    query += username + ', '
-    query += first_name + ', '
-    query += last_name + ', '
-    query += stage_name + ', '
-    query += country + ', '
-    query += date_joined + ', '
-    query += str(phone) + ', '
-    query += email + ', '
-    query += genre + ', '
-    query += str(dayRank) + ', '
-    query += str(monthRank) + ', '
-    query += str(weekRank) + ', '
-    query += str(total_dislikes) + ', '
-    query += str(total_likes) + ', '
-    query += str(date_of_birth) + ')'
+    query = 'insert into Artist (username, firstName, lastName, stageName, country, phone, email, genre, dateOfBirth) values ('
+    query += '"' + username + '", '
+    query += '"' + first_name + '", '
+    query += '"' + last_name + '", '
+    query += '"' + stage_name + '", '
+    query += '"' + country + '", '
+    query += '"' + str(phone) + '", '
+    query += '"' + email + '", '
+    query += '"' + genre + '", '
+    query += '"' + str(date_of_birth) + '");'
     current_app.logger.info(query)
 
     # executing and committing the insert statement 
@@ -143,15 +131,15 @@ def update_artist_account(username):
     dob = the_data['dateOfBirth']
     
     query = 'UPDATE Artist SET '
-    query += 'genre = ' + str(genre) + ', '
-    query += 'stageName = ' + str(stageName) + ', '
-    query += 'email = ' + str(email) + ', '
-    query += 'firstName = ' + str(firstName) + ', '
-    query += 'lastName = ' + str(lastName) + ', '
-    query += 'country = ' + str(country) + ', '
-    query += 'phone = ' + str(phone) + ', '
-    query += 'dateOfBirth = ' + str(dob) + ' '
-    query += 'WHERE username = {0};'.format(username)
+    query += '"' + 'genre = ' + str(genre) + '", '
+    query += '"' + 'stageName = ' + str(stageName) + '", '
+    query += '"' + 'email = ' + str(email) + '", '
+    query += '"' + 'firstName = ' + str(firstName) + '", '
+    query += '"' + 'lastName = ' + str(lastName) + '", '
+    query += '"' + 'country = ' + str(country) + '", '
+    query += '"' + 'phone = ' + str(phone) + '", '
+    query += '"' + 'dateOfBirth = ' + str(dob) + '" '
+    query += '"' + 'WHERE username = {0};'.format(username)
 
     cursor.execute(query)
     current_app.logger.info(query)

@@ -23,13 +23,13 @@ def create_catalog_listing():
 
     # Constructing the query
     query = 'insert into SongCatalog (catalogID, totalSales, value, genre, name, companyID, songID) values ("'
-    query += str(catalogID) + '", "'
-    query += str(totalSales) + '", "'
-    query += str(value) + '", '
-    query += genre + '", "'
-    query += name + '", "'
-    query += str(companyID) + '", '
-    query += str(songID) + ')'
+    query += '"' + str(catalogID) + '", "'
+    query += '"' + str(totalSales) + '", "'
+    query += '"' + str(value) + '", '
+    query += '"' + genre + '", "'
+    query += '"' + name + '", "'
+    query += '"' + str(companyID) + '", '
+    query += '"' + str(songID) + '")'
     current_app.logger.info(query)
 
     # executing and committing the insert statement 
@@ -67,10 +67,10 @@ def update_catalog_listing(catalogID):
     name = the_data['name']
     
     query = 'update SongCatalog set'
-    query += 'totalSales = ' + str(totalSales) + ', '
-    query += 'value = ' + str(value) + ', '
-    query += 'genre = ' + str(genre) + ', '
-    query += 'name = ' + str(name) + ' '
+    query += 'totalSales = "' + str(totalSales) + '", '
+    query += 'value = "' + str(value) + '", '
+    query += 'genre = "' + str(genre) + '", '
+    query += 'name = "' + str(name) + '" '
     query += 'where catalogID = {0};'.format(catalogID)
 
     cursor.execute(query)
