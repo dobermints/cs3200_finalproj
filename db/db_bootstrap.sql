@@ -25,7 +25,7 @@ CREATE TABLE Artist (
     lastName varchar(255) NOT NULL,
     stageName varchar(255) NOT NULL,
     country varchar(255) NOT NULL,
-    dateJoined DATE DEFAULT NOW(),
+    dateJoined DATE DEFAULT (CURRENT_TIMESTAMP),
     phone VARCHAR(10) UNIQUE,
     email varchar(255) UNIQUE,
     genre varchar(255),
@@ -42,7 +42,7 @@ CREATE TABLE User (
     firstName varchar(255) NOT NULL,
     lastName varchar(255) NOT NULL,
     country varchar(255) NOT NULL,
-    dateJoined DATE,
+    dateJoined DATE DEFAULT (CURRENT_TIMESTAMP),
     phone INTEGER(10),
     email varchar(255) NOT NULL,
     dateOfBirth DATE
@@ -53,7 +53,7 @@ CREATE TABLE RecordLabel (
     name varchar(255) NOT NULL UNIQUE,
     contactFirstName varchar(255) NOT NULL,
     contactLastName varchar(255) NOT NULL,
-    dateJoined DATE,
+    dateJoined DATE DEFAULT (CURRENT_TIMESTAMP),
     billingStreetAddress varchar(255),
     billingCityAddress varchar(255),
     billingStateAddress varchar(255),
@@ -104,7 +104,7 @@ CREATE TABLE Researcher (
     researcherID VARCHAR(20) PRIMARY KEY,
     institution varchar(255) NOT NULL,
     dataUsed FLOAT,
-    dateJoined DATETIME DEFAULT NOW(),
+    dateJoined DATE DEFAULT (CURRENT_TIMESTAMP),
     contactFirstName varchar(255) NOT NULL,
     contactLastName varchar(255) NOT NULL,
     contactPhone INTEGER(10) NOT NULL,
@@ -170,9 +170,13 @@ CREATE TABLE Friends (
 -- Add sample data.
 DELETE FROM Artist;
 
-INSERT INTO Artist (username, firstName, lastName, stageName, country, dateJoined, phone, email, genre, dayRank, monthRank, weekRank, totalDislikes, totalLikes, dateOfBirth)
-VALUE ('davidzhang0', 'David', 'Zhang', 'davidz', 'USA', NOW(), 6316379598, 'dzhang.og@gmail.com', 'jazz', 1, 1, 1, 0, 0, NOW());
+INSERT INTO Artist (username, firstName, lastName, stageName, country, phone, email, genre, dayRank, monthRank, weekRank, totalDislikes, totalLikes, dateOfBirth)
+VALUE ('davidzhang0', 'David', 'Zhang', 'davidz', 'USA', 6316379598, 'dzhang.og@gmail.com', 'jazz', 1, 1, 1, 0, 0, NOW());
 
 
 INSERT INTO Song (songID, genre, language, title, duration, dateReleased, dayRank, monthRank, weekRank, artistUsername)
 VALUE ('3085435', 'jazz', 'english', 'ERT', 345, NOW(), 1, 1, 1, 'davidzhang0');
+
+INSERT INTO Artist (username, firstName, lastName, stageName, country, phone, email, genre, dayRank, monthRank, weekRank, totalDislikes, totalLikes, dateOfBirth)
+VALUE ('alexmarz0', 'alex', 'marzano', 'amarz', 'USA', 6316379590, 'marzano.og@gmail.com', 'hyperpop', 2, 2, 2, 5, 2, NOW());
+
