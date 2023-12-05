@@ -4,21 +4,6 @@ from src import db
 
 catalogs = Blueprint('catalogs', __name__)
 
-# Get catalog based on catalogID
-@catalogs.route('/catalogs/<catalogID>', methods=['GET'])
-def get_catalog(catalogID):
-    cursor = db.get_db().cursor()
-    cursor.execute('select * from SongCatalog where catalogID = {0}'.format(catalogID))
-    row_headers = [x[0] for x in cursor.description]
-    json_data = []
-    theData = cursor.fetchall()
-    for row in theData:
-        json_data.append(dict(zip(row_headers, row)))
-    the_response = make_response(jsonify(json_data))
-    the_response.status_code = 200
-    the_response.mimetype = 'application/json'
-    return the_response
-
 # Create/make public catalog
 @catalogs.route('/catalog', methods=['POST'])
 def create_catalog_listing():
@@ -54,11 +39,11 @@ def create_catalog_listing():
     
     return 'Success!'
 
-# Update a song catalog
-@catalogs.route('/catalog/row/<row>', methods=['PUT'])
-def update_catalog_listing(catalogID):
+# Get catalog based on catalogID
+@catalogs.route('/catalogs/<catalogID>', methods=['GET'])
+def get_catalog(catalogID):
     cursor = db.get_db().cursor()
-    cursor.execute('update SongCatalog set where catalogID = {0}'.format(catalogID))
+    cursor.execute('select * from SongCatalog where catalogID = {0}'.format(catalogID))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -69,11 +54,63 @@ def update_catalog_listing(catalogID):
     the_response.mimetype = 'application/json'
     return the_response
 
+# Update a song catalog
+@catalogs.route('/catalog/<catalogID>', methods=['PUT'])
+def update_catalog_listing(catalogID):
+    cursor = db.get_db().cursor()
+    the_data = request.json
+    current_app.logger.info(the_data)
+    
+    totalSales = the_data['totalSales']
+    value = the_data['value']
+    genre = the_data['genre']
+    name = the_data['name']
+    
+    query = 'update SongCatalog set'
+    query += 'totalSales = ' + str(totalSales) + ', '
+    query += 'value = ' + str(value) + ', '
+    query += 'genre = ' + str(genre) + ', '
+    query += 'name = ' + str(name) + ' '
+    query += 'where catalogID = {0};'.format(catalogID)
+
+    cursor.execute(query)
+    current_app.logger.info(query)
+    db.get_db().commit()
+    
+    return 'Success!'
+
 # Delete catalog for a specific catalogID
-@catalogs.route('/catalog/deleted', methods=['DELETE'])
+@catalogs.route('/catalog/<catalogID>', methods=['DELETE'])
 def delete_catalog_listing(catalogID):
     cursor = db.get_db().cursor()
-    cursor.execute('delete from SongCatalog where catalogID = {0}'.format(catalogID))
+    
+    query = 'delete from SongCatalog where catalogID = {0};'.format(catalogID)
+    cursor.execute(query)
+    current_app.logger.info(query)
+    db.get_db().commit()
+    
+    return 'Success!'
+
+# Get catalog based on genre
+@catalogs.route('/catalogs/genre/<genre>', methods=['GET'])
+def get_catalog(genre):
+    cursor = db.get_db().cursor()
+    cursor.execute('select * from SongCatalog where genre = {0}'.format(genre))
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
+# Get the genre of a particular catalog
+@catalogs.route('/catalogs/genre/<catalogID>', methods=['GET'])
+def get_catalog(catalogID):
+    cursor = db.get_db().cursor()
+    cursor.execute('select genre from SongCatalog where catalogID = {0}'.format(catalogID))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()

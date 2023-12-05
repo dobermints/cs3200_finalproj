@@ -45,7 +45,6 @@ CREATE TABLE User (
     dateJoined DATE,
     phone INTEGER(10),
     email varchar(255) NOT NULL,
-    totalLikes INT,
     dateOfBirth DATE
 );
 
@@ -170,3 +169,4 @@ CREATE TABLE Friends (
 -- Add sample data.
 INSERT INTO Artist (username, firstName, lastName, stageName, country, dateJoined, phone, email, genre, dayRank, monthRank, weekRank, totalDislikes, totalLikes, dateOfBirth)
 VALUE ('davidzhang0', 'David', 'Zhang', 'davidz', 'USA', NOW(), 6316379598, 'dzhang.og@gmail.com', 'jazz', 1, 1, 1, 0, 0, NOW());
+
