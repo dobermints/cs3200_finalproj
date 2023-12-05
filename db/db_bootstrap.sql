@@ -172,3 +172,7 @@ DELETE FROM Artist;
 
 INSERT INTO Artist (username, firstName, lastName, stageName, country, dateJoined, phone, email, genre, dayRank, monthRank, weekRank, totalDislikes, totalLikes, dateOfBirth)
 VALUE ('davidzhang0', 'David', 'Zhang', 'davidz', 'USA', NOW(), 6316379598, 'dzhang.og@gmail.com', 'jazz', 1, 1, 1, 0, 0, NOW());
+
+
+INSERT INTO Song (songID, genre, language, title, duration, dateReleased, dayRank, monthRank, weekRank, artistUsername)
+VALUE ('3085435', 'jazz', 'english', 'ERT', 345, NOW(), 1, 1, 1, 'davidzhang0');

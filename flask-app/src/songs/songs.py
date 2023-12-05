@@ -19,6 +19,22 @@ def get_song(songID):
     the_response.mimetype = 'application/json'
     return the_response
 
+# Get song based on its name/title
+@songs.route('/songs/<title>', methods=['GET'])
+def get_song_by_title(title):
+    cursor = db.get_db().cursor()
+    cursor.execute("select * from Song where title LIKE '%{0}%'".format(title))
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
+
 # update existing song's genre, language, or title details based on songID
 @songs.route('/songs/songid/<songID>', methods=['PUT'])
 def limited_update_song(songID):
