@@ -26,15 +26,15 @@ CREATE TABLE Artist (
     stageName varchar(255) NOT NULL,
     country varchar(255) NOT NULL,
     dateJoined DATE DEFAULT (CURRENT_TIMESTAMP),
-    phone VARCHAR(10) UNIQUE,
-    email varchar(255) UNIQUE,
+    phone VARCHAR(10) UNIQUE NOT NULL,
+    email varchar(255) UNIQUE NOT NULL,
     genre varchar(255),
     dayRank INT UNIQUE DEFAULT NULL,
     monthRank INT UNIQUE DEFAULT NULL,
     weekRank INT UNIQUE DEFAULT NULL,
     totalDislikes INT DEFAULT 0,
     totalLikes INT DEFAULT 0,
-    dateOfBirth DATE
+    dateOfBirth DATE NOT NULL
 );
 
 CREATE TABLE User (
@@ -43,9 +43,9 @@ CREATE TABLE User (
     lastName varchar(255) NOT NULL,
     country varchar(255) NOT NULL,
     dateJoined DATE DEFAULT (CURRENT_TIMESTAMP),
-    phone INTEGER(10),
-    email varchar(255) NOT NULL,
-    dateOfBirth DATE
+    phone VARCHAR(10) UNIQUE NOT NULL,
+    email varchar(255) NOT NULL UNIQUE,
+    dateOfBirth DATE NOT NULL
 );
 
 CREATE TABLE RecordLabel (
@@ -62,8 +62,8 @@ CREATE TABLE RecordLabel (
     headquartersCityAddress varchar(255),
     headquartersStateAddress varchar(255),
     headquartersCountryAddress varchar(255),
-    contactPhone INTEGER(10) NOT NULL,
-    contactEmail varchar(255) NOT NULL
+    contactPhone varchar(10) NOT NULL UNIQUE,
+    contactEmail varchar(255) NOT NULL UNIQUE
 );
 
 CREATE TABLE Song (
@@ -72,10 +72,10 @@ CREATE TABLE Song (
     language varchar(255) NOT NULL,
     title varchar(255) NOT NULL,
     duration INT,
-    dateReleased DATE,
-    dayRank INT,
-    monthRank INT,
-    weekRank INT,
+    dateReleased DATE NOT NULL,
+    dayRank INT DEFAULT NULL,
+    monthRank INT DEFAULT NULL,
+    weekRank INT DEFAULT NULL,
     dislikes INT DEFAULT 0,
     likes INT DEFAULT 0,
     artistUsername varchar(20) NOT NULL,
@@ -107,8 +107,8 @@ CREATE TABLE Researcher (
     dateJoined DATE DEFAULT (CURRENT_TIMESTAMP),
     contactFirstName varchar(255) NOT NULL,
     contactLastName varchar(255) NOT NULL,
-    contactPhone INTEGER(10) NOT NULL,
-    contactEmail varchar(255) NOT NULL
+    contactPhone varchar(10) UNIQUE NOT NULL,
+    contactEmail varchar(255) UNIQUE NOT NULL
 );
 
 CREATE TABLE Signings (
@@ -165,18 +165,4 @@ CREATE TABLE Friends (
         ON UPDATE CASCADE
         ON DELETE CASCADE
 );
-
-
--- Add sample data.
-DELETE FROM Artist;
-
-INSERT INTO Artist (username, firstName, lastName, stageName, country, phone, email, genre, dayRank, monthRank, weekRank, totalDislikes, totalLikes, dateOfBirth)
-VALUE ('davidzhang0', 'David', 'Zhang', 'davidz', 'USA', 6316379598, 'dzhang.og@gmail.com', 'jazz', 1, 1, 1, 0, 0, NOW());
-
-
-INSERT INTO Song (songID, genre, language, title, duration, dateReleased, dayRank, monthRank, weekRank, artistUsername)
-VALUE ('3085435', 'jazz', 'english', 'ERT', 345, NOW(), 1, 1, 1, 'davidzhang0');
-
-INSERT INTO Artist (username, firstName, lastName, stageName, country, phone, email, genre, dayRank, monthRank, weekRank, totalDislikes, totalLikes, dateOfBirth)
-VALUE ('alexmarz0', 'alex', 'marzano', 'amarz', 'USA', 6316379590, 'marzano.og@gmail.com', 'hyperpop', 2, 2, 2, 5, 2, NOW());
 
