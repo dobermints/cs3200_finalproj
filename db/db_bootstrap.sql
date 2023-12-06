@@ -85,7 +85,7 @@ CREATE TABLE Song (
 );
 
 CREATE TABLE SongCatalog (
-    catalogID VARCHAR(20) PRIMARY KEY,
+    catalogID VARCHAR(20) PRIMARY KEY auto_increment,
     totalSales INT,
     value INT,
     genre varchar(255) NOT NULL,
