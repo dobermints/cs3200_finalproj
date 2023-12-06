@@ -114,7 +114,7 @@ def delete_user_account(username):
 @users.route('/users/friends/<username>', methods=['GET'])
 def get_user_friends(username):
     cursor = db.get_db().cursor()
-    cursor.execute('select * from User JOIN (select * from Friends where requestUsername = {0}'.format(username) + ') as a ON a.acceptUsername = User.username;')
+    cursor.execute("select * from User JOIN (select * from Friends where requestUsername = '{0}'".format(username) + ') as a ON a.acceptUsername = User.username;')
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
