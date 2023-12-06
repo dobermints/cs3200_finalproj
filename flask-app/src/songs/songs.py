@@ -8,7 +8,7 @@ songs = Blueprint('songs', __name__)
 @songs.route('/songs/songid/<songID>', methods=['GET'])
 def get_song(songID):
     cursor = db.get_db().cursor()
-    cursor.execute('select * from Song where songID = {0}'.format(songID))
+    cursor.execute("select * from Song where songID = '{0}'".format(songID))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -161,10 +161,10 @@ def get_all_song_likes():
     return the_response
 
 # Get a specific song and its number of likes
-@songs.route('/songs/likes/<songID>', methods=['GET'])
-def get_one_song_likes(songID):
+@songs.route('/songs/likes/<title>', methods=['GET'])
+def get_one_song_likes(title):
     cursor = db.get_db().cursor()
-    cursor.execute('select title, likes from Song where songID = {0}'.format(songID))
+    cursor.execute("select title, likes from Song where title LIKE '%{0}%'".format(" ".join(title.split("+"))))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -187,34 +187,35 @@ def toggle_song_likes():
     userUsername = the_data['userUsername']
     
     # grab songId and previous unchangeable details
-    songInfo = get_song(songID)
+    cursor.execute("SELECT likes FROM Song WHERE songID = '" + songID + "';")
+    prev_likes = cursor.fetchall()
+    prev_likes = str(prev_likes).replace(",", "").replace("(", "").replace(")","")
+    query_to_check_if_liked = "SELECT count(*) FROM SongLikes WHERE songID = '" + songID + "' AND userUsername = '" + userUsername + "';"
     
-    query_to_check_if_liked = 'SELECT count(*) FROM SongLikes WHERE songID = ' + songID + ' AND userUsername = ' + userUsername + ";"
+    cursor.execute(query_to_check_if_liked)
+    theData = cursor.fetchall()
+    theData = str(theData).replace(",", "").replace("(", "").replace(")","")
     
-    if query_to_check_if_liked == '0': # not liked yet
-        
-        prev_likes = songInfo['likes']
-    
+    if theData == '0': # not liked yet
         querySong = 'UPDATE Song SET '
-        querySong += 'likes = "' + str(prev_likes + 1) + '" '
-        querySong += 'WHERE songID = {0};'.format(songID)
+        querySong += "likes = " + str(int(prev_likes) + 1) + " "
+        querySong += "WHERE songID = {0};".format(songID)
         
         querySongLikes = 'INSERT INTO SongLikes (songID, userUsername) VALUES ('
-        querySongLikes += '"' + str(songID) + '", '
-        querySongLikes += '"' + str(userUsername) + ");"
+        querySongLikes += "'" + str(songID) + "', "
+        querySongLikes += "'" + str(userUsername) + "');"
         
-    elif query_to_check_if_liked == '1': # already liked song being unliked
-        
+    elif theData == '1': # already liked song being unliked
         querySong = 'UPDATE Song SET '
-        querySong += 'likes = "' + str(prev_likes - 1) + '" '
-        querySong += 'WHERE songID = {0};'.format(songID)
+        querySong += "likes = " + str(int(prev_likes) - 1) + " "
+        querySong += "WHERE songID = {0};".format(songID)
         
-        querySongLikes = 'DELETE FROM SongLikes WHERE'
-        querySongLikes += 'songID = "' + str(songID) + '" AND '
-        querySongLikes += 'userUsername = "' + str(userUsername) + '");'
+        querySongLikes = 'DELETE FROM SongLikes WHERE '
+        querySongLikes += "songID = '" + str(songID) + "' AND "
+        querySongLikes += "userUsername = '" + str(userUsername) + "';"
         
     else:
-        raise Exception('Error updating likes')
+        raise Exception(prev_likes + theData)
     
     cursor.execute(querySong)
     cursor.execute(querySongLikes)
@@ -222,7 +223,7 @@ def toggle_song_likes():
     current_app.logger.info(querySongLikes)
 
     db.get_db().commit()
-    return 'Successful update'
+    return 'Successful update with ' + prev_likes + " " + theData
 
 # Get a specific song and its number of dislikes
 @songs.route('/songs/dislikes/<songID>', methods=['GET'])
