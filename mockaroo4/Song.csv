@@ -1,0 +1,101 @@
+songID,genre,language,title,duration,dateReleased,dayRank,monthRank,weekRank,dislikes,likes,artistUsername
+1,pop,Latvian,Melodies of Love,189,1969-03-04,4500,9273,4423,429704,96962,opember1r
+2,country,Bengali,Melodies of Love,227,1961-07-08,7180,1104,342,429289,270845,gelstoby
+3,rock,Swedish,Harmony of the Heart,342,2016-08-25,1653,9979,4529,851832,322655,rgarmey8
+4,hip hop,Fijian,Harmony of the Heart,491,2004-09-14,6552,1887,9603,621435,3015,twiddowfieldf
+5,reggae,Korean,Harmony of the Heart,291,2006-05-08,9589,4002,6636,29391,123249,abattams4
+6,jazz,New Zealand Sign Language,Serenade in the Rain,280,2002-04-08,4855,90,9052,819424,783371,torton2
+7,country,Moldovan,Serenade in the Rain,492,1962-03-19,2800,8566,5330,602770,859917,rwitnallp
+8,jazz,Gagauz,Midnight Serenade,375,1960-06-22,7613,3359,3213,8913,662590,rharrowingc
+9,folk,Swedish,Rhythm of the Night,361,2014-03-08,7208,1564,2962,590240,325377,aduxfield1h
+10,reggae,Greek,Serenade in the Rain,265,1970-04-03,153,2237,3285,550832,422295,smcdermot2h
+11,hip hop,Armenian,Midnight Serenade,269,1984-12-22,9962,6818,9398,806463,691751,alandell2d
+12,hip hop,Tajik,Echoes of Yesterday,165,2001-12-01,3070,3793,9872,26121,567588,spartona
+13,hip hop,Quechua,Melodies of Love,359,2010-05-31,4592,166,9320,317932,72427,oflaws2q
+14,jazz,Maltese,Summer Breeze,496,2003-02-18,3113,8659,6490,8789,433217,opember1r
+15,electronic,Japanese,Rhythm of the Night,174,1967-05-05,283,3178,6472,327382,865766,gelstoby
+16,folk,Georgian,Harmony of the Heart,121,1968-10-22,2669,3729,1664,300224,378049,dmackayb
+17,electronic,Kashmiri,Sunshine,324,1972-02-01,3925,673,5612,846316,44344,rgoldberg2l
+18,electronic,Bengali,Echoes of Yesterday,310,1985-08-08,6463,3904,9147,982970,508147,mgrimsdell27
+19,rock,Swahili,Summer Breeze,354,1957-11-27,9224,2359,1851,611998,891504,jnipper2i
+20,jazz,Tamil,Serenade in the Rain,481,1968-04-25,6894,3015,7446,36850,255201,rbrogi1q
+21,jazz,Bosnian,Melodies of Love,297,1959-05-09,9865,8096,9850,913350,518866,dchiese1b
+22,pop,Persian,Rhythm of the Night,172,1953-05-24,5056,8059,6017,417503,824274,fgorton26
+23,jazz,Swati,Dancing in the Moonlight,427,1965-12-04,3509,4801,3061,117470,813343,skillingsworth2p
+24,classical,Catalan,Summer Breeze,168,2019-11-12,2644,6599,1012,351677,296098,dmackayb
+25,hip hop,New Zealand Sign Language,Whispering Wind,476,1986-11-11,1068,4655,3004,483624,784767,rlaugherane1c
+26,country,Burmese,Whispering Wind,386,1968-02-29,637,966,768,371179,118328,opapaccio12
+27,rock,Armenian,Serenade in the Rain,135,2003-10-26,2046,9788,5972,962207,722597,bonians2n
+28,folk,Pashto,Summer Breeze,240,2022-12-17,5521,3884,3525,110368,964034,opapaccio12
+29,jazz,Papiamento,Summer Breeze,459,1976-11-25,5615,5621,7754,70715,317350,awilde1n
+30,metal,Finnish,Harmony of the Heart,276,1973-08-21,4460,3070,507,356237,607062,wgronalleru
+31,rock,Danish,Sunshine,174,2012-11-28,250,8432,3846,713617,29858,adenisevich11
+32,rock,Portuguese,Echoes of Yesterday,314,2000-08-23,8531,4288,8203,459243,242062,edomnink
+33,metal,Tsonga,Echoes of Yesterday,332,1988-11-25,2937,191,3912,791504,962953,rgoldberg2l
+34,hip hop,Indonesian,Whispering Wind,323,1983-02-23,132,1703,350,299904,197574,wgronalleru
+35,country,Danish,Whispering Wind,302,1965-05-07,9932,1206,7908,996337,852662,mgrimsdell27
+36,electronic,Portuguese,Melodies of Love,319,2010-07-28,1588,6346,2270,993878,435114,rbrogi1q
+37,classical,Bosnian,Serenade in the Rain,158,1968-04-12,1164,5901,6719,84260,905006,alandell2d
+38,pop,Guaraní,Dancing in the Moonlight,206,1983-02-13,149,974,3741,114068,414968,hfrend22
+39,jazz,Malay,Serenade in the Rain,329,2001-03-11,3823,9978,8985,924285,112681,pcawthron1m
+40,metal,Nepali,Midnight Serenade,470,1974-11-12,9741,7786,4381,75430,379281,ndanet21
+41,rock,Dhivehi,Dancing in the Moonlight,224,1993-10-18,2294,4934,3815,722781,426403,mmargiotta5
+42,folk,Assamese,Harmony of the Heart,298,1971-06-03,9194,5019,7815,516279,784809,ktroak14
+43,country,Quechua,Serenade in the Rain,305,1963-04-25,9116,1029,9486,872566,505426,stomblett1
+44,rock,Bosnian,Summer Breeze,368,1987-08-28,9510,9907,9448,757951,975333,mgrimsdell27
+45,folk,Aymara,Whispering Wind,240,1952-02-11,5481,2698,8125,969364,491241,ilarn2r
+46,country,Belarusian,Dancing in the Moonlight,255,1963-10-31,6937,3478,7950,872681,413780,mklementr
+47,metal,Lao,Dancing in the Moonlight,464,2018-04-26,3552,6661,4764,418241,762493,pcawthron1m
+48,jazz,Somali,Melodies of Love,474,2008-09-24,8149,6830,6942,78693,716168,opapaccio12
+49,pop,Tok Pisin,Rhythm of the Night,331,2020-01-27,2544,9913,8270,72165,160282,mmargiotta5
+50,classical,Catalan,Dancing in the Moonlight,280,1977-02-09,4491,1857,538,400854,298683,ngoutcher2m
+51,folk,New Zealand Sign Language,Whispering Wind,296,2009-07-30,5535,5809,2069,725044,606203,mpandie1e
+52,hip hop,Kashmiri,Whispering Wind,454,1998-04-30,540,2644,554,424891,758602,koatley7
+53,reggae,Punjabi,Echoes of Yesterday,429,2021-12-23,7043,4126,9561,509647,726127,dhamnet16
+54,folk,Tsonga,Serenade in the Rain,178,1983-01-23,2747,3027,8374,312746,255576,spartona
+55,reggae,Japanese,Rhythm of the Night,462,1955-02-09,2481,409,6871,131046,6310,bwildor0
+56,folk,Ndebele,Harmony of the Heart,181,1996-02-07,6752,451,8545,74451,232872,bonians2n
+57,pop,Northern Sotho,Rhythm of the Night,275,2012-03-10,508,4297,3140,642485,686393,dchiese1b
+58,hip hop,Quechua,Sunshine,319,2015-12-01,7447,5509,3799,576372,294943,eizchakiv
+59,pop,Catalan,Dancing in the Moonlight,255,1996-06-16,2999,5130,7944,512407,495450,mwillgrass1k
+60,country,New Zealand Sign Language,Whispering Wind,494,1977-01-02,771,4375,7221,794252,576562,isteuart3
+61,pop,Finnish,Dancing in the Moonlight,478,1950-12-12,5233,9503,7600,661768,515505,rharrowingc
+62,metal,Malagasy,Echoes of Yesterday,420,2007-12-09,9629,3613,7633,931615,934417,rgarmey8
+63,reggae,Oriya,Harmony of the Heart,273,1989-11-02,1147,5696,4704,974701,634852,bonians2n
+64,country,Danish,Summer Breeze,180,1993-03-19,2041,5182,5145,656842,960148,bwildor0
+65,pop,Finnish,Rhythm of the Night,142,1972-12-11,9186,2886,5282,307472,694823,bonians2n
+66,metal,Khmer,Melodies of Love,339,1997-10-25,1659,5703,6967,236421,953786,rgoldberg2l
+67,rock,Chinese,Sunshine,246,1966-10-15,8011,5584,1720,326669,322987,aduxfield1h
+68,folk,Tajik,Midnight Serenade,412,1983-12-24,5276,4188,1600,110809,840242,ldjakovicg
+69,electronic,Hiri Motu,Summer Breeze,281,1984-11-11,3482,1808,8795,700888,493746,ireyburnl
+70,folk,Tajik,Dancing in the Moonlight,236,1997-12-14,686,5201,7608,528123,152282,eizchakiv
+71,country,Lao,Dancing in the Moonlight,321,1978-09-14,3037,5585,781,461766,361210,ngoutcher2m
+72,jazz,Lao,Sunshine,401,1999-06-25,2289,4184,2876,710415,428435,bwildor0
+73,rock,Somali,Serenade in the Rain,152,1994-09-26,1595,5723,5148,826586,894503,elomasny2e
+74,reggae,Amharic,Summer Breeze,423,2013-01-17,9622,6128,7201,539678,693724,rhalwill2b
+75,electronic,Irish Gaelic,Midnight Serenade,397,2002-08-01,7720,1036,1361,46427,584278,ncanadine25
+76,country,Danish,Sunshine,180,2015-08-14,7917,1597,3256,72454,766596,gnoah2k
+77,metal,Portuguese,Echoes of Yesterday,154,2002-12-03,9996,3792,2745,906198,742452,rwitnallp
+78,folk,Spanish,Sunshine,497,1973-12-12,2868,8202,683,875248,316027,chamson15
+79,reggae,Afrikaans,Rhythm of the Night,467,1987-09-11,7763,2136,9869,310349,519400,torton2
+80,folk,Marathi,Harmony of the Heart,460,1967-01-13,8312,8242,9672,162497,582700,pmacailine2o
+81,metal,Somali,Echoes of Yesterday,236,1998-01-10,467,4072,4048,77931,541136,aduxfield1h
+82,classical,Chinese,Dancing in the Moonlight,494,1975-12-30,4229,1523,5764,719162,117631,rgandersq
+83,metal,Filipino,Harmony of the Heart,354,1966-03-19,1597,5743,2651,798446,178297,browat1o
+84,jazz,Moldovan,Harmony of the Heart,359,2008-09-04,3922,8769,2915,633526,164645,rbrogi1q
+85,electronic,Gagauz,Serenade in the Rain,134,2001-02-08,1031,9742,1612,406654,250034,pcawthron1m
+86,classical,Gujarati,Melodies of Love,487,1995-07-28,7667,6285,9248,218476,512029,chamson15
+87,folk,Tetum,Melodies of Love,495,1956-11-10,8622,552,2368,620568,536919,gnoah2k
+88,hip hop,Mongolian,Summer Breeze,425,2023-01-30,6020,620,6169,868712,965616,cgrimmert1t
+89,jazz,Assamese,Echoes of Yesterday,337,1978-07-05,8633,2976,6637,411520,260738,jveck29
+90,rock,French,Dancing in the Moonlight,422,2007-05-24,9606,9695,3905,275525,317577,glippitt1v
+91,rock,Bosnian,Midnight Serenade,437,2001-06-06,5666,6319,1272,540136,471368,mmargiotta5
+92,folk,Dhivehi,Midnight Serenade,224,1958-12-19,9115,4574,5440,454131,438532,evickar1y
+93,folk,Czech,Whispering Wind,158,2017-12-29,3114,7550,3504,888100,947087,cgrimmert1t
+94,reggae,West Frisian,Summer Breeze,492,1971-11-02,4248,7713,9188,818475,486584,oflaws2q
+95,pop,Polish,Sunshine,457,2018-12-13,1069,5474,5016,764226,133599,ireyburnl
+96,folk,Chinese,Melodies of Love,363,1986-12-26,4853,6623,1199,740923,492490,jveck29
+97,jazz,Croatian,Echoes of Yesterday,183,2008-07-11,1911,3066,6752,397991,655078,tdavio1u
+98,metal,Swati,Whispering Wind,182,1960-08-26,955,6816,7151,71551,913645,rwitnallp
+99,metal,Filipino,Rhythm of the Night,362,1955-01-11,3519,5137,5949,602808,743250,smcphater9
+100,folk,Pashto,Echoes of Yesterday,271,1991-01-29,8232,1631,6396,593472,603336,pmillhill13

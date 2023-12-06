@@ -1,0 +1,101 @@
+catalogID,totalSales,value,genre,name,companyID,songID
+1,9973,3208,hip hop,Whispering Wind,1,66
+2,5384,5386,jazz,Echoes of Yesterday,17,18
+3,5079,1469,dance,Summer Breeze,31,15
+4,5471,9921,rock,Whispering Wind,43,37
+5,6307,3244,punk,Harmony of the Heart,28,100
+6,9643,9089,country,Dancing in the Moonlight,54,33
+7,522,473,dance,Echoes of Yesterday,84,87
+8,2517,5476,gospel,Echoes of Yesterday,83,31
+9,1448,1097,alternative,Sunshine,100,42
+10,2103,7747,country,Dancing in the Moonlight,58,83
+11,4096,3746,reggae,Rhythm of the Night,85,92
+12,7781,5682,jazz,Echoes of Yesterday,66,26
+13,831,3620,rock,Sunshine,63,21
+14,2854,1640,hip hop,Serenade in the Rain,91,10
+15,7623,1969,gospel,Dancing in the Moonlight,89,72
+16,7388,570,classical,Summer Breeze,88,85
+17,844,4686,electronic,Summer Breeze,25,47
+18,6813,2604,classical,Sunshine,69,7
+19,6604,6404,dance,Midnight Serenade,98,96
+20,5248,1761,gospel,Whispering Wind,75,70
+21,6111,7947,dance,Sunshine,4,73
+22,8455,9514,alternative,Whispering Wind,27,94
+23,3002,3154,folk,Dancing in the Moonlight,14,62
+24,4349,2074,electronic,Midnight Serenade,55,16
+25,6039,9466,alternative,Summer Breeze,10,17
+26,5846,3072,jazz,Whispering Wind,48,34
+27,7253,8713,dance,Echoes of Yesterday,9,40
+28,8905,5754,rock,Midnight Serenade,46,25
+29,6160,636,rock,Harmony of the Heart,70,74
+30,7255,1625,metal,Harmony of the Heart,96,3
+31,6572,9769,country,Midnight Serenade,26,32
+32,2071,6070,folk,Melodies of Love,30,12
+33,4352,7996,latin,Harmony of the Heart,12,43
+34,8155,4973,hip hop,Serenade in the Rain,56,57
+35,7932,5813,jazz,Whispering Wind,18,48
+36,4131,8459,punk,Serenade in the Rain,59,63
+37,9664,4335,gospel,Rhythm of the Night,39,56
+38,4627,5594,gospel,Dancing in the Moonlight,97,50
+39,4306,6946,classical,Harmony of the Heart,93,55
+40,6626,7576,country,Serenade in the Rain,65,82
+41,1507,3795,metal,Echoes of Yesterday,64,54
+42,7235,3600,pop,Serenade in the Rain,34,6
+43,2471,357,dance,Echoes of Yesterday,92,1
+44,7075,5029,pop,Rhythm of the Night,33,36
+45,2761,7291,latin,Serenade in the Rain,90,88
+46,132,1776,alternative,Rhythm of the Night,21,22
+47,7173,29,classical,Melodies of Love,47,97
+48,1177,9699,folk,Harmony of the Heart,37,30
+49,8867,3080,electronic,Midnight Serenade,3,98
+50,3608,6706,gospel,Harmony of the Heart,79,53
+51,1739,253,soul,Serenade in the Rain,77,60
+52,1397,5282,country,Dancing in the Moonlight,19,75
+53,4629,2579,indie,Melodies of Love,50,27
+54,8862,3010,punk,Dancing in the Moonlight,16,59
+55,8148,6444,pop,Dancing in the Moonlight,57,24
+56,1624,3709,rap,Dancing in the Moonlight,67,11
+57,2473,1826,reggae,Sunshine,42,14
+58,8972,7556,folk,Summer Breeze,78,49
+59,4382,8958,dance,Echoes of Yesterday,6,95
+60,2779,7613,alternative,Midnight Serenade,73,79
+61,7398,9247,rock,Summer Breeze,74,65
+62,3959,5661,jazz,Summer Breeze,68,69
+63,3235,2105,blues,Harmony of the Heart,15,78
+64,1583,1950,country,Whispering Wind,32,99
+65,2225,1516,classical,Whispering Wind,2,51
+66,566,4477,jazz,Echoes of Yesterday,62,71
+67,8500,5790,soul,Summer Breeze,80,61
+68,2915,3974,r&b,Midnight Serenade,23,19
+69,3104,8571,alternative,Echoes of Yesterday,76,64
+70,2386,3702,rap,Serenade in the Rain,41,29
+71,977,7725,rap,Sunshine,40,67
+72,1722,3994,metal,Harmony of the Heart,24,93
+73,3833,2441,hip hop,Whispering Wind,71,90
+74,2653,6558,alternative,Whispering Wind,11,91
+75,2065,316,rap,Harmony of the Heart,13,8
+76,8844,5299,blues,Rhythm of the Night,7,23
+77,7932,6150,jazz,Rhythm of the Night,72,84
+78,4599,3545,jazz,Summer Breeze,99,38
+79,954,1197,blues,Echoes of Yesterday,81,2
+80,1152,6431,dance,Harmony of the Heart,5,9
+81,4372,3459,country,Melodies of Love,61,20
+82,8054,1256,classical,Midnight Serenade,51,46
+83,2722,3363,indie,Dancing in the Moonlight,22,4
+84,3936,5644,soul,Rhythm of the Night,49,77
+85,617,3069,classical,Dancing in the Moonlight,95,13
+86,913,8933,rap,Sunshine,52,52
+87,9493,1873,alternative,Sunshine,44,58
+88,3152,4273,folk,Sunshine,94,39
+89,3819,4347,dance,Echoes of Yesterday,36,80
+90,2053,7891,blues,Rhythm of the Night,29,45
+91,2072,8743,soul,Melodies of Love,86,35
+92,4188,9926,rap,Rhythm of the Night,35,41
+93,5475,5737,country,Whispering Wind,60,28
+94,460,4846,electronic,Harmony of the Heart,8,5
+95,9413,3783,r&b,Serenade in the Rain,20,81
+96,7140,4837,pop,Echoes of Yesterday,82,86
+97,2484,1389,hip hop,Sunshine,53,89
+98,5530,6774,electronic,Midnight Serenade,87,68
+99,4359,9379,pop,Sunshine,45,76
+100,9464,6785,pop,Echoes of Yesterday,38,44
