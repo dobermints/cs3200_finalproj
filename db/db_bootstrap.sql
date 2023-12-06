@@ -26,7 +26,7 @@ CREATE TABLE Artist (
     stageName varchar(255) NOT NULL,
     country varchar(255) NOT NULL,
     dateJoined DATE DEFAULT (CURRENT_TIMESTAMP),
-    phone VARCHAR(10) UNIQUE NOT NULL,
+    phone VARCHAR(15) UNIQUE NOT NULL,
     email varchar(255) UNIQUE NOT NULL,
     genre varchar(255),
     dayRank INT UNIQUE DEFAULT NULL,
@@ -43,7 +43,7 @@ CREATE TABLE User (
     lastName varchar(255) NOT NULL,
     country varchar(255) NOT NULL,
     dateJoined DATE DEFAULT (CURRENT_TIMESTAMP),
-    phone VARCHAR(10) UNIQUE NOT NULL,
+    phone VARCHAR(15) UNIQUE NOT NULL,
     email varchar(255) NOT NULL UNIQUE,
     dateOfBirth DATE NOT NULL
 );
@@ -62,7 +62,7 @@ CREATE TABLE RecordLabel (
     headquartersCityAddress varchar(255),
     headquartersStateAddress varchar(255),
     headquartersCountryAddress varchar(255),
-    contactPhone varchar(10) NOT NULL UNIQUE,
+    contactPhone varchar(15) NOT NULL UNIQUE,
     contactEmail varchar(255) NOT NULL UNIQUE
 );
 
@@ -107,7 +107,7 @@ CREATE TABLE Researcher (
     dateJoined DATE DEFAULT (CURRENT_TIMESTAMP),
     contactFirstName varchar(255) NOT NULL,
     contactLastName varchar(255) NOT NULL,
-    contactPhone varchar(10) UNIQUE NOT NULL,
+    contactPhone varchar(15) UNIQUE NOT NULL,
     contactEmail varchar(255) UNIQUE NOT NULL
 );
 
@@ -164,4 +164,5 @@ CREATE TABLE Friends (
     CONSTRAINT fk_friends_acc FOREIGN KEY (acceptUsername) REFERENCES User (username)
         ON UPDATE CASCADE
         ON DELETE CASCADE
-);git ad
+);
+
