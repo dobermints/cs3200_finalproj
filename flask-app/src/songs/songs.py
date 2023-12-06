@@ -191,7 +191,7 @@ def toggle_song_likes():
     
     query_to_check_if_liked = 'SELECT count(*) FROM SongLikes WHERE songID = ' + songID + ' AND userUsername = ' + userUsername + ";"
     
-    if query_to_check_if_liked == 0: # not liked yet
+    if query_to_check_if_liked == '0': # not liked yet
         
         prev_likes = songInfo['likes']
     
@@ -203,7 +203,7 @@ def toggle_song_likes():
         querySongLikes += '"' + str(songID) + '", '
         querySongLikes += '"' + str(userUsername) + ");"
         
-    elif query_to_check_if_liked == 1: # already liked song being unliked
+    elif query_to_check_if_liked == '1': # already liked song being unliked
         
         querySong = 'UPDATE Song SET '
         querySong += 'likes = "' + str(prev_likes - 1) + '" '
