@@ -58,28 +58,21 @@ def add_new_artist():
     
     return 'Success!'
 
+
+
+
+
 # Delete an artist profile based on username
 @artists.route('/artists/<username>', methods=['DELETE'])
-def delete_artist(username):
-    
-    # collecting data from the request object 
-    the_data = request.json
-    current_app.logger.info(the_data)
-
-    query = '''
-        DELETE
-        FROM Artist
-        WHERE username = {0};
-    '''.format(username)
-    
-    current_app.logger.info(query)
-
-    # executing and committing the insert statement 
+def delete_artist_account(username):
     cursor = db.get_db().cursor()
-    cursor.execute(query)
-    db.get_db().commit()
     
-    return 'Success!'
+    query = 'delete from Artist where username = {0};'.format(username)
+    cursor.execute(query)
+    current_app.logger.info(query)
+    
+    db.get_db().commit()
+    return 'Successful deletion'
 
 # Get user account for specific user
 @artists.route('/artists/<username>', methods=['GET'])
