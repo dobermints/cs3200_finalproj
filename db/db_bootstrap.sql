@@ -164,4 +164,7 @@ CREATE TABLE Friends (
     CONSTRAINT fk_friends_acc FOREIGN KEY (acceptUsername) REFERENCES User (username)
         ON UPDATE CASCADE
         ON DELETE CASCADE
-);git ad
+);
+
+UPDATE Artist SET dayRank = 10
+WHERE username = 'uty';

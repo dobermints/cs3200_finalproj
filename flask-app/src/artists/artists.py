@@ -148,10 +148,10 @@ def update_artist_account(username):
     return 'Success!'
 
 # Get artist rank based off artist username
-@artists.route('/artists/rank/<username>', methods=['GET'])
-def get_artist_rank(username):
+@artists.route('/artists/rank/<stageName>', methods=['GET'])
+def get_artist_rank(stageName):
     cursor = db.get_db().cursor()
-    cursor.execute('select dayRank, monthRank, weekRank from Artist where username = {0}'.format(username))
+    cursor.execute("select dayRank, monthRank, weekRank from Artist where stageName LIKE '%{0}%';".format(stageName))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
