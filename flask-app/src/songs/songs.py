@@ -189,7 +189,6 @@ def toggle_song_likes():
     # grab songId and previous unchangeable details
     songInfo = get_song(songID)
     
-    print('Test')
     query_to_check_if_liked = 'SELECT count(*) FROM SongLikes WHERE songID = ' + songID + ' AND userUsername = ' + userUsername + ";"
     
     if query_to_check_if_liked == 0: # not liked yet
