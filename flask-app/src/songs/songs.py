@@ -308,11 +308,11 @@ def genre_update_song():
     db.get_db().commit()
     return 'Successful update'
 
-# Get song rank based off songID
-@songs.route('/songs/rank/<songID>', methods=['GET'])
-def get_song_rank(songID):
+# Get song rank based off title
+@songs.route('/songs/rank/<title>', methods=['GET'])
+def get_song_rank(title):
     cursor = db.get_db().cursor()
-    cursor.execute('select dayRank, monthRank, weekRank from Song where songID = {0}'.format(songID))
+    cursor.execute("select title, dayRank, monthRank, weekRank from Song where title LIKE '%{0}%'".format(title))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
