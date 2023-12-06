@@ -23,7 +23,7 @@ def get_song(songID):
 @songs.route('/songs/<title>', methods=['GET'])
 def get_song_by_title(title):
     cursor = db.get_db().cursor()
-    cursor.execute("select * from Song where title LIKE '%{0}%'".format(title))
+    cursor.execute("select * from Song where title LIKE '%{0}%'".format(" ".join(title.split("+"))))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -313,7 +313,7 @@ def genre_update_song():
 @songs.route('/songs/rank/<title>', methods=['GET'])
 def get_song_rank(title):
     cursor = db.get_db().cursor()
-    cursor.execute("select title, dayRank, monthRank, weekRank from Song where title LIKE '%{0}%'".format(title))
+    cursor.execute("select title, dayRank, monthRank, weekRank from Song where title LIKE '%{0}%'".format(" ".join(title.split("+"))))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()

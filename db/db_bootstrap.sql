@@ -165,3 +165,6 @@ CREATE TABLE Friends (
         ON UPDATE CASCADE
         ON DELETE CASCADE
 );
+
+INSERT INTO RecordLabel (companyID, name, contactFirstName, contactLastName, billingStreetAddress, billingCityAddress, billingStateAddress, billingCountryAddress, headquartersStreetAddress, headquartersCityAddress, headquartersStateAddress, headquartersCountryAddress, contactPhone, contactEmail)
+VALUES ('1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14');

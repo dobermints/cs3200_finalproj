@@ -22,14 +22,14 @@ def create_catalog_listing():
     songID = the_data['songID']
 
     # Constructing the query
-    query = 'insert into SongCatalog (catalogID, totalSales, value, genre, name, companyID, songID) values ("'
-    query += '"' + str(catalogID) + '", "'
-    query += '"' + str(totalSales) + '", "'
-    query += '"' + str(value) + '", '
-    query += '"' + genre + '", "'
-    query += '"' + name + '", "'
-    query += '"' + str(companyID) + '", '
-    query += '"' + str(songID) + '")'
+    query = 'insert into SongCatalog (catalogID, totalSales, value, genre, name, companyID, songID) values ('
+    query += "'" + str(catalogID) + "', "
+    query += str(totalSales) + ", "
+    query += str(value) + ", "
+    query += "'" + genre + "', "
+    query += "'" + name + "', "
+    query += "'" + str(companyID) + "', "
+    query += "'" + str(songID) + "')"
     current_app.logger.info(query)
 
     # executing and committing the insert statement 
