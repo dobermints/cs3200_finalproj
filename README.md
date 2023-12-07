@@ -14,6 +14,7 @@ For our project, we decided to create an app for music listeners to be able to i
 2. Build the images with `docker compose build`
 3. Start the containers with `docker compose up`.  To run in detached mode, run `docker compose up -d`. Now you should see 3 containers: "appsmith", "web", and "db". 
 4. *NOTE*: the current version of this app is not hosted on the web, so you need to open the app on your local machine. 
-Video Link: 
 
+Video Link: 
+https://drive.google.com/file/d/1UHSs3kHIsW1zSNVyKOx_lDg1X6BTj6OX/view?usp=drive_link
 
