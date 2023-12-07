@@ -199,7 +199,7 @@ def toggle_song_likes():
     if theData == '0': # not liked yet
         querySong = 'UPDATE Song SET '
         querySong += "likes = " + str(int(prev_likes) + 1) + " "
-        querySong += "WHERE songID = {0};".format(songID)
+        querySong += "WHERE songID = '{0}';".format(songID)
         
         querySongLikes = 'INSERT INTO SongLikes (songID, userUsername) VALUES ('
         querySongLikes += "'" + str(songID) + "', "
@@ -208,14 +208,14 @@ def toggle_song_likes():
     elif theData == '1': # already liked song being unliked
         querySong = 'UPDATE Song SET '
         querySong += "likes = " + str(int(prev_likes) - 1) + " "
-        querySong += "WHERE songID = {0};".format(songID)
+        querySong += "WHERE songID = '{0}';".format(songID)
         
         querySongLikes = 'DELETE FROM SongLikes WHERE '
         querySongLikes += "songID = '" + str(songID) + "' AND "
         querySongLikes += "userUsername = '" + str(userUsername) + "';"
         
     else:
-        raise Exception(prev_likes + theData)
+        raise Exception("error")
     
     cursor.execute(querySong)
     cursor.execute(querySongLikes)
@@ -223,7 +223,7 @@ def toggle_song_likes():
     current_app.logger.info(querySongLikes)
 
     db.get_db().commit()
-    return 'Successful update with ' + prev_likes + " " + theData
+    return 'Successful update'
 
 # Get a specific song and its number of dislikes
 @songs.route('/songs/dislikes/<songID>', methods=['GET'])
